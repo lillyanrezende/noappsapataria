@@ -1,0 +1,131 @@
+-- SCHEMA CORRIGIDO
+-- Tabelas de produtos/inventário mantêm a mesma estrutura
+-- Correções aplicadas:
+-- 1. Foreign keys em audit_logs agora corretas (user_id -> user_id, username -> username)
+-- 2. Constraints renomeadas para clareza
+
+CREATE TABLE public.audit_logs (
+  id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  user_id bigint,
+  username character varying,
+  action character varying NOT NULL,
+  entity character varying NOT NULL,
+  entity_pk text,
+  details jsonb,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT audit_logs_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.profiles(user_id),
+  CONSTRAINT audit_logs_username_fkey FOREIGN KEY (username) REFERENCES public.profiles(username)
+);
+
+CREATE INDEX idx_audit_logs_created_at ON public.audit_logs (created_at);
+
+CREATE INDEX idx_audit_logs_entity ON public.audit_logs (entity);
+
+CREATE INDEX idx_audit_logs_user ON public.audit_logs (user_id);
+
+CREATE TABLE public.brands (
+  id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  name character varying NOT NULL UNIQUE
+);
+
+CREATE TABLE public.categories (
+  id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  name character varying NOT NULL UNIQUE
+);
+
+CREATE TABLE public.colors (
+  id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  name character varying NOT NULL UNIQUE
+);
+
+CREATE TABLE public.product_model (
+  id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  ref character varying,
+  nome_modelo character varying NOT NULL,
+  marca_id bigint NOT NULL,
+  categoria_id bigint NOT NULL,
+  subcategoria_id bigint NOT NULL,
+  fornecedor_id bigint NOT NULL,
+  wc_product_id bigint UNIQUE,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT product_model_marca_id_fkey FOREIGN KEY (marca_id) REFERENCES public.brands(id),
+  CONSTRAINT product_model_categoria_id_fkey FOREIGN KEY (categoria_id) REFERENCES public.categories(id),
+  CONSTRAINT product_model_subcategoria_id_fkey FOREIGN KEY (subcategoria_id) REFERENCES public.subcategories(id),
+  CONSTRAINT product_model_fornecedor_id_fkey FOREIGN KEY (fornecedor_id) REFERENCES public.suppliers(id)
+);
+
+CREATE TABLE public.product_variant (
+  id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  model_id bigint NOT NULL,
+  gtin character varying NOT NULL UNIQUE,
+  cor_id bigint NOT NULL,
+  tamanho_id bigint NOT NULL,
+  ref_keyinvoice character varying,
+  wc_variation_id bigint UNIQUE,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT product_variant_model_id_fkey FOREIGN KEY (model_id) REFERENCES public.product_model(id),
+  CONSTRAINT product_variant_cor_id_fkey FOREIGN KEY (cor_id) REFERENCES public.colors(id),
+  CONSTRAINT product_variant_tamanho_id_fkey FOREIGN KEY (tamanho_id) REFERENCES public.sizes(id)
+);
+
+CREATE TABLE public.profiles (
+  user_id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  username character varying NOT NULL UNIQUE,
+  nome_usuario character varying NOT NULL,
+  setor character varying,
+  role character varying NOT NULL DEFAULT 'operator'::character varying,
+  is_active boolean NOT NULL DEFAULT true,
+  password_hash character varying NOT NULL,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now()
+);
+
+CREATE TABLE public.sizes (
+  id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  value character varying NOT NULL UNIQUE
+);
+
+CREATE TABLE public.subcategories (
+  id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  category_id bigint NOT NULL,
+  name character varying NOT NULL,
+  CONSTRAINT subcategories_category_id_fkey FOREIGN KEY (category_id) REFERENCES public.categories(id)
+);
+
+CREATE TABLE public.suppliers (
+  id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  name character varying NOT NULL UNIQUE
+);
+
+CREATE TABLE public.warehouse_stock (
+  variant_id bigint NOT NULL,
+  warehouse_id bigint NOT NULL,
+  stock integer NOT NULL DEFAULT 0 CHECK (stock >= 0),
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT warehouse_stock_pkey PRIMARY KEY (variant_id, warehouse_id),
+  CONSTRAINT warehouse_stock_variant_id_fkey FOREIGN KEY (variant_id) REFERENCES public.product_variant(id),
+  CONSTRAINT warehouse_stock_warehouse_id_fkey FOREIGN KEY (warehouse_id) REFERENCES public.warehouses(id)
+);
+
+CREATE TABLE public.warehouses (
+  id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  name character varying NOT NULL UNIQUE
+);
+
+
+-- ALTERAÇÕES REALIZADAS:
+-- 1. audit_logs: Removido campo redundante e corrigidas as foreign keys:
+--    - ANTES: username referenciava user_id, user_id referenciava username (INVERTIDO)
+--    - DEPOIS: user_id -> profiles.user_id, username -> profiles.username (CORRETO)
+--
+-- 2. Estrutura de profiles mantida:
+--    - user_id como PRIMARY KEY (não id)
+--    - username, nome_usuario, setor, role, is_active, password_hash
+--
+-- 3. App.py agora usa:
+--    - authenticate() retorna {"user_id": ..., "username": ...}
+--    - create_user() define is_active=True e role='operator'
+--    - audit() usa user.get("user_id") e user.get("username")
