@@ -135,6 +135,31 @@ class ProductService:
         self.db.delete_variant(variant_id)
         return True
 
+    def sell_from_woocommerce(self, gtin, quantity, warehouse_id=1):
+        """
+        Baixa stock quando venda vem do WooCommerce.
+        warehouse_id padrão = 1 (ajustar conforme necessário)
+        Retorna (success: bool, message: str)
+        """
+        # Verificar se produto existe
+        row = self.db.find_variant_by_gtin(gtin)
+        if not row:
+            return False, f"Produto com GTIN {gtin} não encontrado no sistema"
+        
+        variant_id = row["variant_id"]
+        
+        # Verificar stock atual
+        current_stock = self._get_current_stock(variant_id, warehouse_id)
+        
+        if current_stock < quantity:
+            return False, f"Stock insuficiente para GTIN {gtin}. Disponível: {current_stock}, Solicitado: {quantity}"
+        
+        # Baixar stock
+        new_stock = current_stock - quantity
+        self.db.upsert_stock(variant_id, warehouse_id, new_stock)
+        
+        return True, f"Stock baixado com sucesso. GTIN: {gtin}, Qtd: {quantity}, Stock restante: {new_stock}"
+
 
 class AuthService:
     """Serviço de autenticação"""

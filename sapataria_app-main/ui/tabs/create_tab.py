@@ -46,8 +46,8 @@ class CreateTab(BaseTab):
         self.ref_keyinvoice.grid(row=r, column=3, sticky="w")
         r += 1
 
-        ttk.Label(self, text="Ref WooCommerce (opcional)").grid(row=r, column=0, sticky="w", pady=(8, 0))
-        self.ref_woocommerce.grid(row=r, column=1, sticky="w", padx=(0, 12), pady=(8, 0))
+        ttk.Label(self, text="Ref WooCommerce (opcional)").grid(row=r, column=2, sticky="w", pady=(8, 0))
+        self.ref_woocommerce.grid(row=r, column=3, sticky="w", padx=(0, 12), pady=(8, 0))
         r += 1
 
         ttk.Label(self, text="Modelo (nome_modelo)").grid(row=r, column=0, sticky="w", pady=(8, 0))
