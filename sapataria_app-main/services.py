@@ -10,7 +10,7 @@ class ProductService:
 
     def create_or_update_product(self, gtin, nome_modelo, brand_id, category_id, 
                                  subcategory_id, supplier_id, color_id, size_id, 
-                                 warehouse_id, stock, ref_keyinvoice=None):
+                                 warehouse_id, stock, ref_keyinvoice=None, ref_woocommerce=None):
         """
         Cria produto (model + variant) ou atualiza stock se já existir.
         Retorna (success: bool, message: str, variant_id: int)
@@ -37,7 +37,8 @@ class ProductService:
             gtin=gtin,
             cor_id=color_id,
             tamanho_id=size_id,
-            ref_keyinvoice=ref_keyinvoice
+            ref_keyinvoice=ref_keyinvoice,
+            ref_woocommerce=ref_woocommerce
         )
 
         self.db.upsert_stock(variant_id, warehouse_id, stock)
@@ -74,6 +75,8 @@ class ProductService:
             'tamanho_id': variant_fields["tamanho_id"],
             'ref_keyinvoice': variant_fields.get("ref_keyinvoice")
         }
+        if "ref_woocomerce" in variant_fields:
+            variant_data["ref_woocomerce"] = variant_fields.get("ref_woocomerce")
         self.db.update_variant(variant_id, variant_data)
 
         return True, "Atualizado com sucesso."

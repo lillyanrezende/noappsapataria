@@ -165,14 +165,15 @@ class DB:
             }
         return None
 
-    def create_variant(self, model_id, gtin, cor_id, tamanho_id, ref_keyinvoice=None):
+    def create_variant(self, model_id, gtin, cor_id, tamanho_id, ref_keyinvoice=None, ref_woocommerce=None):
         """Cria uma nova variante"""
         data = {
             'model_id': model_id,
             'gtin': gtin.strip(),
             'cor_id': cor_id,
             'tamanho_id': tamanho_id,
-            'ref_keyinvoice': ref_keyinvoice
+            'ref_keyinvoice': ref_keyinvoice,
+            'ref_woocomerce': ref_woocommerce
         }
         response = self.supabase.table('product_variant').insert(data).execute()
         return response.data[0]['id']
