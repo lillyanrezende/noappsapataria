@@ -10,50 +10,153 @@
 
     <form method="post" enctype="multipart/form-data" class="row g-3 mb-4">
         {% csrf_token %}
-        <input type="hidden" name="action" value="process">
 
         <div class="col-md-4">
             <label class="form-label">Armazem</label>
             <select class="form-select" name="warehouse_id">
                 {% for item in warehouses %}
-                    <option value="{{ item.0 }}">{{ item.1 }}</option>
+                    <option value="{{ item.0 }}" {% if form.warehouse_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
                 {% endfor %}
             </select>
         </div>
         <div class="col-md-4">
             <label class="form-label">Operacao</label>
             <select class="form-select" name="operation">
-                <option value="add">Adicionar</option>
-                <option value="remove">Remover</option>
-                <option value="set">Definir</option>
+                <option value="add" {% if form.operation == 'add' %}selected{% endif %}>Adicionar</option>
+                <option value="remove" {% if form.operation == 'remove' %}selected{% endif %}>Remover</option>
+                <option value="set" {% if form.operation == 'set' %}selected{% endif %}>Definir</option>
             </select>
         </div>
         <div class="col-md-4">
             <label class="form-label">Quantidade</label>
-            <input class="form-control" name="quantity">
+            <input class="form-control" name="quantity" value="{{ form.quantity|default:'' }}">
         </div>
 
         <div class="col-md-4">
             <label class="form-label">Buscar por</label>
             <select class="form-select" name="search_type">
-                <option value="ref_keyinvoice">Ref KeyInvoice</option>
-                <option value="ref_woocommerce">Ref WooCommerce</option>
-                <option value="gtin">GTIN</option>
+                <option value="ref_keyinvoice" {% if form.search_type == 'ref_keyinvoice' %}selected{% endif %}>Ref KeyInvoice</option>
+                <option value="ref_woocommerce" {% if form.search_type == 'ref_woocommerce' %}selected{% endif %}>Ref WooCommerce</option>
+                <option value="gtin" {% if form.search_type == 'gtin' %}selected{% endif %}>GTIN</option>
             </select>
         </div>
+        <div class="col-md-4">
+            <label class="form-label">Codigo</label>
+            <input class="form-control" name="single_code" value="{{ form.single_code|default:'' }}">
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+            <button class="btn btn-outline-dark" type="submit" name="action" value="preview_codes">Buscar</button>
+        </div>
 
+        {% if preview_rows %}
+        <div class="col-12">
+            <details>
+                <summary class="mb-2">Editar codigos</summary>
+                <textarea class="form-control" name="codes" rows="5">{{ codes_text|default:'' }}</textarea>
+            </details>
+        </div>
+        {% else %}
         <div class="col-12">
             <label class="form-label">Codigos (um por linha)</label>
-            <textarea class="form-control" name="codes" rows="5"></textarea>
+            <textarea class="form-control" name="codes" rows="5">{{ codes_text|default:'' }}</textarea>
         </div>
+        {% endif %}
         <div class="col-md-6">
             <label class="form-label">Excel (opcional)</label>
             <input class="form-control" type="file" name="excel" accept=".xlsx">
         </div>
         <div class="col-12">
-            <button class="btn btn-primary" type="submit">Processar</button>
+            <button class="btn btn-outline-dark" type="submit" name="action" value="preview_excel">Carregar Excel</button>
+            <button class="btn btn-primary" type="submit" name="action" value="process">Processar</button>
         </div>
     </form>
+
+    {% if preview_rows %}
+    <div class="table-responsive mb-4">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>GTIN</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Cor</th>
+                    <th>Tamanho</th>
+                    <th>Ref KeyInvoice</th>
+                    <th>Ref WooCommerce</th>
+                    <th>Stock (Armazens)</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in preview_rows %}
+                <tr>
+                    <td>{{ row.gtin }}</td>
+                    <td>{{ row.nome_modelo }}</td>
+                    <td>{{ row.marca }}</td>
+                    <td>{{ row.cor }}</td>
+                    <td>{{ row.tamanho }}</td>
+                    <td>{{ row.ref_keyinvoice }}</td>
+                    <td>{{ row.ref_woocomerce }}</td>
+                    <td>
+                        {% if row.stock_rows %}
+                        <table class="table table-sm mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Armazem</th>
+                                    <th>Stock</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for stock in row.stock_rows %}
+                                <tr>
+                                    <td>{{ stock.warehouse }}</td>
+                                    <td>{{ stock.stock }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                        {% else %}
+                        <span>Sem stock</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="action" value="details">
+                            <input type="hidden" name="variant_id" value="{{ row.variant_id }}">
+                            <input type="hidden" name="warehouse_id" value="{{ form.warehouse_id|default:'' }}">
+                            <input type="hidden" name="operation" value="{{ form.operation|default:'' }}">
+                            <input type="hidden" name="quantity" value="{{ form.quantity|default:'' }}">
+                            <input type="hidden" name="search_type" value="{{ form.search_type|default:'' }}">
+                            <input type="hidden" name="codes" value="{{ codes_text|default:'' }}">
+                            <button class="btn btn-sm btn-outline-dark" type="submit">Detalhes</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+
+    {% if details %}
+    <div class="app-card">
+        <h5>Detalhes</h5>
+        <p class="mb-2"><strong>GTIN:</strong> {{ details.gtin }} | <strong>Modelo:</strong> {{ details.nome_modelo }}</p>
+        <p class="mb-2"><strong>Marca:</strong> {{ details.marca }} | <strong>Fornecedor:</strong> {{ details.fornecedor }}</p>
+        <p class="mb-2"><strong>Categoria:</strong> {{ details.categoria }} / {{ details.subcategoria }}</p>
+        <p class="mb-3"><strong>Cor/Tamanho:</strong> {{ details.cor }} / {{ details.tamanho }}</p>
+        <h6>Stock por armazem</h6>
+        <ul class="list-group">
+            {% for stock in details_stocks %}
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>{{ stock.armazem }}</span>
+                    <span>{{ stock.stock }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
 
     {% if logs %}
         <div class="app-card">

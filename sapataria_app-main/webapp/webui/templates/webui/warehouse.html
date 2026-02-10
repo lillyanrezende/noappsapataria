@@ -14,7 +14,7 @@
             <label class="form-label">Armazem</label>
             <select class="form-select" name="warehouse_id">
                 {% for item in warehouses %}
-                    <option value="{{ item.0 }}">{{ item.1 }}</option>
+                    <option value="{{ item.0 }}" {% if form.warehouse_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
                 {% endfor %}
             </select>
         </div>

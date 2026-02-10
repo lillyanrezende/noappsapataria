@@ -36,61 +36,89 @@
 
         <div class="col-md-4">
             <label class="form-label">Marca</label>
-            <select class="form-select" name="brand_id">
-                {% for item in domains.brands %}
-                    <option value="{{ item.0 }}" {% if form.brand_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
-                {% endfor %}
-            </select>
+            <div class="input-group">
+                <select class="form-select" name="brand_id">
+                    <option value="" {% if not form.brand_id %}selected{% endif %}>Selecione Marca</option>
+                    {% for item in domains.brands %}
+                        <option value="{{ item.0 }}" {% if form.brand_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                    {% endfor %}
+                </select>
+                <button class="btn btn-outline-dark" type="button" data-domain="brands">+</button>
+            </div>
         </div>
         <div class="col-md-4">
             <label class="form-label">Fornecedor</label>
-            <select class="form-select" name="supplier_id">
-                {% for item in domains.suppliers %}
-                    <option value="{{ item.0 }}" {% if form.supplier_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
-                {% endfor %}
-            </select>
+            <div class="input-group">
+                <select class="form-select" name="supplier_id">
+                    <option value="" {% if not form.supplier_id %}selected{% endif %}>Selecione Fornecedor</option>
+                    {% for item in domains.suppliers %}
+                        <option value="{{ item.0 }}" {% if form.supplier_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                    {% endfor %}
+                </select>
+                <button class="btn btn-outline-dark" type="button" data-domain="suppliers">+</button>
+            </div>
         </div>
 
         <div class="col-md-4">
             <label class="form-label">Categoria</label>
-            <select class="form-select" name="category_id" id="category-select">
-                {% for item in domains.categories %}
-                    <option value="{{ item.0 }}" {% if form.category_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
-                {% endfor %}
-            </select>
+            <div class="input-group">
+                <select class="form-select" name="category_id" id="category-select">
+                    <option value="" {% if not form.category_id %}selected{% endif %}>Selecione Categoria</option>
+                    {% for item in domains.categories %}
+                        <option value="{{ item.0 }}" {% if form.category_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                    {% endfor %}
+                </select>
+                <button class="btn btn-outline-dark" type="button" data-domain="categories">+</button>
+            </div>
         </div>
         <div class="col-md-4">
             <label class="form-label">Subcategoria</label>
-            <select class="form-select" name="subcategory_id" id="subcategory-select">
-                {% for item in subcategories %}
-                    <option value="{{ item.0 }}" {% if form.subcategory_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
-                {% endfor %}
-            </select>
+            <div class="input-group">
+                <select class="form-select" name="subcategory_id" id="subcategory-select">
+                    <option value="" {% if not form.subcategory_id %}selected{% endif %}>Selecione Subcategoria</option>
+                    {% for item in subcategories %}
+                        <option value="{{ item.0 }}" {% if form.subcategory_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                    {% endfor %}
+                </select>
+                <button class="btn btn-outline-dark" type="button" data-domain="subcategories">+</button>
+            </div>
         </div>
 
         <div class="col-md-4">
             <label class="form-label">Cor</label>
-            <select class="form-select" name="color_id">
-                {% for item in domains.colors %}
-                    <option value="{{ item.0 }}" {% if form.color_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
-                {% endfor %}
-            </select>
+            <div class="input-group">
+                <select class="form-select" name="color_id">
+                    <option value="" {% if not form.color_id %}selected{% endif %}>Selecione Cor</option>
+                    {% for item in domains.colors %}
+                        <option value="{{ item.0 }}" {% if form.color_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                    {% endfor %}
+                </select>
+                <button class="btn btn-outline-dark" type="button" data-domain="colors">+</button>
+            </div>
         </div>
         <div class="col-md-4">
             <label class="form-label">Tamanho</label>
-            <select class="form-select" name="size_id">
-                {% for item in domains.sizes %}
-                    <option value="{{ item.0 }}" {% if form.size_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
-                {% endfor %}
-            </select>
+            <div class="input-group">
+                <select class="form-select" name="size_id">
+                    <option value="" {% if not form.size_id %}selected{% endif %}>Selecione Tamanho</option>
+                    {% for item in domains.sizes %}
+                        <option value="{{ item.0 }}" {% if form.size_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                    {% endfor %}
+                </select>
+                <button class="btn btn-outline-dark" type="button" data-domain="sizes">+</button>
+            </div>
         </div>
         <div class="col-md-4">
             <label class="form-label">Armazem</label>
-            <select class="form-select" name="warehouse_id">
-                {% for item in domains.warehouses %}
-                    <option value="{{ item.0 }}" {% if form.warehouse_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
-                {% endfor %}
-            </select>
+            <div class="input-group">
+                <select class="form-select" name="warehouse_id">
+                    <option value="" {% if not form.warehouse_id %}selected{% endif %}>Selecione Armazem</option>
+                    {% for item in domains.warehouses %}
+                        <option value="{{ item.0 }}" {% if form.warehouse_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                    {% endfor %}
+                </select>
+                <button class="btn btn-outline-dark" type="button" data-domain="warehouses">+</button>
+            </div>
         </div>
 
         <div class="col-12 d-flex gap-2">
@@ -99,39 +127,12 @@
         </div>
     </form>
 
-    <hr class="my-4">
-
-    <h4 class="mb-3">Adicionar dominio</h4>
-    <form method="post" class="row g-3">
+    <form method="post" id="domain-add-form" class="d-none">
         {% csrf_token %}
         <input type="hidden" name="action" value="add_domain">
-        <div class="col-md-3">
-            <label class="form-label">Tabela</label>
-            <select class="form-select" name="domain_table">
-                <option value="brands">Marcas</option>
-                <option value="suppliers">Fornecedores</option>
-                <option value="categories">Categorias</option>
-                <option value="subcategories">Subcategorias</option>
-                <option value="colors">Cores</option>
-                <option value="sizes">Tamanhos</option>
-                <option value="warehouses">Armazens</option>
-            </select>
-        </div>
-        <div class="col-md-4">
-            <label class="form-label">Valor</label>
-            <input class="form-control" name="domain_value">
-        </div>
-        <div class="col-md-3">
-            <label class="form-label">Categoria (para subcategoria)</label>
-            <select class="form-select" name="domain_category_id">
-                {% for item in domains.categories %}
-                    <option value="{{ item.0 }}">{{ item.1 }}</option>
-                {% endfor %}
-            </select>
-        </div>
-        <div class="col-md-2 d-flex align-items-end">
-            <button class="btn btn-accent" type="submit">Adicionar</button>
-        </div>
+        <input type="hidden" name="domain_table" id="domain-table">
+        <input type="hidden" name="domain_value" id="domain-value">
+        <input type="hidden" name="domain_category_id" id="domain-category-id">
     </form>
 </div>
 
@@ -145,6 +146,10 @@
             const resp = await fetch(`/api/subcategories/?category_id=${categoryId}`);
             const data = await resp.json();
             subcategorySelect.innerHTML = '';
+            const placeholder = document.createElement('option');
+            placeholder.value = '';
+            placeholder.textContent = 'Selecione Subcategoria';
+            subcategorySelect.appendChild(placeholder);
             data.items.forEach(item => {
                 const opt = document.createElement('option');
                 opt.value = item.id;
@@ -153,5 +158,24 @@
             });
         });
     }
+
+    document.querySelectorAll('[data-domain]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const domain = btn.getAttribute('data-domain');
+            const label = btn.closest('.col-md-4').querySelector('.form-label').textContent.trim();
+            if (domain === 'subcategories' && !categorySelect.value) {
+                alert('Selecione uma categoria primeiro.');
+                return;
+            }
+            const value = prompt(`Novo ${label}:`);
+            if (!value) {
+                return;
+            }
+            document.getElementById('domain-table').value = domain;
+            document.getElementById('domain-value').value = value.trim();
+            document.getElementById('domain-category-id').value = domain === 'subcategories' ? categorySelect.value : '';
+            document.getElementById('domain-add-form').submit();
+        });
+    });
 </script>
 {% endblock %}

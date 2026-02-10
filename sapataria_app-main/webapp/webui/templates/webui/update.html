@@ -41,6 +41,7 @@
                     <th>Tamanho</th>
                     <th>Ref KeyInvoice</th>
                     <th>Ref WooCommerce</th>
+                    <th>Stock por armazem</th>
                     <th></th>
                 </tr>
             </thead>
@@ -54,6 +55,7 @@
                     <td>{{ row.tamanho }}</td>
                     <td>{{ row.ref_keyinvoice }}</td>
                     <td>{{ row.ref_woocomerce }}</td>
+                    <td>{{ row.stock }}</td>
                     <td>
                         <form method="post">
                             {% csrf_token %}

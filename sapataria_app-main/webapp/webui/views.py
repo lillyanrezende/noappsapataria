@@ -215,6 +215,15 @@ def update_view(request):
             else:
                 try:
                     search_results = db.search_variants(value, search_type)
+                    for item in search_results:
+                        stock_response = db.supabase.table("warehouse_stock").select(
+                            "stock, warehouses(name)"
+                        ).eq("variant_id", item["variant_id"]).execute()
+                        if stock_response.data:
+                            stocks = [f"{s['warehouses']['name']}: {s['stock']}" for s in stock_response.data]
+                            item["stock"] = " | ".join(stocks)
+                        else:
+                            item["stock"] = "Sem stock"
                     if not search_results:
                         messages.append(("info", "No variants found."))
                 except Exception as exc:
@@ -415,6 +424,14 @@ def view_view(request):
                         if full:
                             header, _ = full
                             item["marca"] = header.get("marca")
+                        stock_response = db.supabase.table("warehouse_stock").select(
+                            "stock, warehouses(name)"
+                        ).eq("variant_id", item["variant_id"]).execute()
+                        if stock_response.data:
+                            stocks = [f"{s['warehouses']['name']}: {s['stock']}" for s in stock_response.data]
+                            item["stock"] = " | ".join(stocks)
+                        else:
+                            item["stock"] = "Sem stock"
                     if not results:
                         messages.append(("info", "No results."))
                 except Exception as exc:
@@ -488,11 +505,28 @@ def warehouse_view(request):
                 messages.append(("error", "Select a warehouse."))
             else:
                 try:
-                    response = db.supabase.table("warehouse_stock").select(
-                        "stock, product_variant(id, gtin, product_model(nome_modelo, brands(name), categories(name), subcategories(name)), colors(name), sizes(value))"
-                    ).eq("warehouse_id", warehouse_id).order("product_variant(gtin)").execute()
+                    warehouse_name = None
+                    for item in warehouses:
+                        if str(item[0]) == str(warehouse_id):
+                            warehouse_name = item[1]
+                            break
+                    rows = []
+                    page_size = 1000
+                    offset = 0
+                    while True:
+                        response = db.supabase.table("warehouse_stock").select(
+                            "stock, product_variant(id, gtin, product_model(nome_modelo, brands(name), categories(name), subcategories(name)), colors(name), sizes(value))"
+                        ).eq("warehouse_id", warehouse_id).order("product_variant(gtin)").range(
+                            offset, offset + page_size - 1
+                        ).execute()
 
-                    rows = response.data or []
+                        batch = response.data or []
+                        if not batch:
+                            break
+                        rows.extend(batch)
+                        if len(batch) < page_size:
+                            break
+                        offset += page_size
                     total_items = sum([row.get("stock", 0) for row in rows])
                     summary = {"total_items": total_items, "count": len(rows)}
 
@@ -502,7 +536,8 @@ def warehouse_view(request):
                             wb_stream.getvalue(),
                             content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                         )
-                        response["Content-Disposition"] = "attachment; filename=armazem.xlsx"
+                        safe_name = (warehouse_name or "armazem").lower().replace(" ", "_")
+                        response["Content-Disposition"] = f"attachment; filename=armazem_{safe_name}.xlsx"
                         db.audit(
                             user,
                             "EXPORT_WAREHOUSE_EXCEL",
@@ -530,11 +565,69 @@ def bulk_update_view(request):
     user = request.session.get("user")
     messages = []
     logs = []
+    codes_text = request.POST.get("codes", "") if request.method == "POST" else ""
+    form = request.POST if request.method == "POST" else {}
+    preview_rows = []
+    details = None
+    details_stocks = []
 
     warehouses = domain_service.get_domain_list("warehouses")
 
     if request.method == "POST":
         action = request.POST.get("action")
+        if action == "preview_codes":
+            search_type = request.POST.get("search_type", "ref_keyinvoice")
+            codes = []
+            single_code = request.POST.get("single_code", "").strip()
+            if single_code:
+                codes.append(single_code)
+            raw_codes = request.POST.get("codes", "")
+            if raw_codes:
+                codes.extend(parse_codes_from_text(raw_codes))
+            if not codes:
+                messages.append(("error", "Provide codes to search."))
+            else:
+                preview_rows = build_bulk_preview(db, codes, search_type)
+                codes_text = build_bulk_codes_text(preview_rows)
+
+        if action == "preview_excel":
+            if not request.FILES.get("excel"):
+                messages.append(("error", "Select an Excel file to load."))
+            else:
+                try:
+                    from openpyxl import load_workbook
+
+                    wb = load_workbook(request.FILES["excel"], read_only=True)
+                    ws = wb.active
+                    codes = []
+                    headers = [str(cell).strip() if cell is not None else "" for cell in next(ws.iter_rows(min_row=1, max_row=1, values_only=True))]
+                    search_type = request.POST.get("search_type", "ref_keyinvoice")
+                    code_index = find_excel_code_index(headers, search_type)
+                    for row in ws.iter_rows(min_row=2, values_only=True):
+                        if row and len(row) > code_index and row[code_index]:
+                            code = str(row[code_index]).strip()
+                            if code:
+                                codes.append(code)
+                    preview_rows = build_bulk_preview(db, codes, search_type)
+                    codes_text = build_bulk_codes_text(preview_rows)
+                    messages.append(("success", f"Carregados {len(codes)} codigos do Excel."))
+                except Exception as exc:
+                    messages.append(("error", f"Excel load failed: {exc}"))
+
+        if action == "details":
+            variant_id = request.POST.get("variant_id")
+            if variant_id:
+                full = db.get_full_view_by_variant_id(variant_id)
+                if full:
+                    details, details_stocks = full
+                else:
+                    messages.append(("info", "Variant not found."))
+            search_type = request.POST.get("search_type", "ref_keyinvoice")
+            if codes_text:
+                codes = parse_codes_from_text(codes_text)
+                preview_rows = build_bulk_preview(db, codes, search_type)
+                codes_text = build_bulk_codes_text(preview_rows)
+
         if action == "process":
             warehouse_id = request.POST.get("warehouse_id")
             operation = request.POST.get("operation", "add")
@@ -549,19 +642,18 @@ def bulk_update_view(request):
                 codes = []
                 raw_codes = request.POST.get("codes", "")
                 if raw_codes:
-                    for line in raw_codes.splitlines():
-                        line = line.strip()
-                        if line:
-                            codes.append(line)
+                    codes.extend(parse_codes_from_text(raw_codes))
 
                 if request.FILES.get("excel"):
                     try:
                         from openpyxl import load_workbook
                         wb = load_workbook(request.FILES["excel"], read_only=True)
                         ws = wb.active
+                        headers = [str(cell).strip() if cell is not None else "" for cell in next(ws.iter_rows(min_row=1, max_row=1, values_only=True))]
+                        code_index = find_excel_code_index(headers, search_type)
                         for row in ws.iter_rows(min_row=2, values_only=True):
-                            if row and row[0]:
-                                code = str(row[0]).strip()
+                            if row and len(row) > code_index and row[code_index]:
+                                code = str(row[code_index]).strip()
                                 if code:
                                     codes.append(code)
                     except Exception as exc:
@@ -570,6 +662,8 @@ def bulk_update_view(request):
                 if not codes:
                     messages.append(("error", "Provide codes or an Excel file."))
                 else:
+                    if search_type != "gtin" and all(code.isdigit() and len(code) in (13, 14) for code in codes):
+                        search_type = "gtin"
                     success_count = 0
                     error_count = 0
 
@@ -623,13 +717,155 @@ def bulk_update_view(request):
 
                     messages.append(("success", f"Processed. Success: {success_count}. Errors: {error_count}."))
 
+        if not preview_rows and codes_text:
+            search_type = request.POST.get("search_type", "ref_keyinvoice")
+            codes = parse_codes_from_text(codes_text)
+            if codes:
+                preview_rows = build_bulk_preview(db, codes, search_type)
+                codes_text = build_bulk_codes_text(preview_rows)
+
     context = {
         "user": user,
         "messages": messages,
         "logs": logs,
         "warehouses": warehouses,
+        "codes_text": codes_text,
+        "form": form,
+        "preview_rows": preview_rows,
+        "details": details,
+        "details_stocks": details_stocks,
     }
     return render(request, "webui/bulk_update.html", context)
+
+
+def build_bulk_preview(db, codes, search_type):
+    rows = []
+    for code in codes:
+        results = db.search_variants(code, search_type)
+        if not results:
+            continue
+        for result in results:
+            variant_id = result.get("variant_id")
+            full = db.get_full_view_by_variant_id(variant_id)
+            brand = None
+            category = None
+            subcategory = None
+            if full:
+                header, _ = full
+                brand = header.get("marca")
+                category = header.get("categoria")
+                subcategory = header.get("subcategoria")
+
+            stock_response = db.supabase.table("warehouse_stock").select(
+                "stock, warehouses(name)"
+            ).eq("variant_id", variant_id).execute()
+
+            stock_rows = []
+            if stock_response.data:
+                stocks = [f"{s['warehouses']['name']}: {s['stock']}" for s in stock_response.data]
+                stock_text = " | ".join(stocks)
+                stock_rows = [
+                    {"warehouse": s["warehouses"]["name"], "stock": s["stock"]}
+                    for s in stock_response.data
+                ]
+            else:
+                stock_text = "Sem stock"
+
+            rows.append(
+                {
+                    "variant_id": variant_id,
+                    "gtin": result.get("gtin"),
+                    "category": category,
+                    "subcategory": subcategory,
+                    "nome_modelo": result.get("nome_modelo"),
+                    "marca": brand,
+                    "cor": result.get("cor"),
+                    "tamanho": result.get("tamanho"),
+                    "ref_keyinvoice": result.get("ref_keyinvoice"),
+                    "ref_woocomerce": result.get("ref_woocomerce"),
+                    "stock": stock_text,
+                    "stock_rows": stock_rows,
+                }
+            )
+    return rows
+
+
+def build_bulk_codes_text(preview_rows):
+    header = [
+        "GTIN",
+        "Ref Keyinvoice",
+        "Ref Woocomerce",
+        "Categoria",
+        "Subcategoria",
+        "Modelo",
+        "Marca",
+        "Cor",
+        "Tamanho",
+    ]
+
+    warehouse_names = []
+    for row in preview_rows:
+        for stock in row.get("stock_rows") or []:
+            name = stock.get("warehouse")
+            if name and name not in warehouse_names:
+                warehouse_names.append(name)
+
+    header.extend([f"Quantidade Armazem {name}" for name in warehouse_names])
+    lines = [";".join(header)]
+
+    for row in preview_rows:
+        stock_map = {}
+        for stock in row.get("stock_rows") or []:
+            stock_map[stock.get("warehouse")] = stock.get("stock")
+
+        line = [
+            str(row.get("gtin") or ""),
+            str(row.get("ref_keyinvoice") or ""),
+            str(row.get("ref_woocomerce") or ""),
+            str(row.get("category") or ""),
+            str(row.get("subcategory") or ""),
+            str(row.get("nome_modelo") or ""),
+            str(row.get("marca") or ""),
+            str(row.get("cor") or ""),
+            str(row.get("tamanho") or ""),
+        ]
+        line.extend([str(stock_map.get(name, 0)) for name in warehouse_names])
+        lines.append(";".join(line))
+
+    return "\n".join(lines)
+
+
+def parse_codes_from_text(text):
+    codes = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        parts = [p.strip() for p in line.split(";")]
+        if not parts:
+            continue
+        if parts[0].lower() == "gtin":
+            continue
+        if parts[0]:
+            codes.append(parts[0])
+    return codes
+
+
+def find_excel_code_index(headers, search_type):
+    normalized = [h.strip().lower() for h in headers]
+    if search_type == "gtin":
+        candidates = ["gtin"]
+    elif search_type == "ref_keyinvoice":
+        candidates = ["ref keyinvoice", "ref key invoice", "refkeyinvoice"]
+    else:
+        candidates = ["ref woocommerce", "ref woocomerce", "ref_woocommerce", "ref_woocomerce"]
+
+    for candidate in candidates:
+        if candidate in normalized:
+            return normalized.index(candidate)
+
+    # fallback to first column
+    return 0
 
 
 def subcategories_view(request):
@@ -650,16 +886,22 @@ def build_excel_for_variants(db, results):
     ws = wb.active
     ws.title = "Produtos"
 
+    warehouses_resp = db.supabase.table("warehouses").select("id, name").order("name").execute()
+    warehouses = warehouses_resp.data or []
+    warehouse_names = [w["name"] for w in warehouses]
+
     headers = [
         "GTIN",
+        "Ref KeyInvoice",
+        "Ref WooCommerce",
+        "Categoria",
+        "Subcategoria",
         "Modelo",
         "Marca",
         "Cor",
         "Tamanho",
-        "Ref KeyInvoice",
-        "Ref WooCommerce",
-        "Stock (Armazens)",
     ]
+    headers.extend([f"Quantidade Armazem {name}" for name in warehouse_names])
     ws.append(headers)
 
     header_fill = PatternFill(start_color="4472C4", end_color="4472C4", fill_type="solid")
@@ -670,28 +912,30 @@ def build_excel_for_variants(db, results):
         cell.alignment = Alignment(horizontal="center", vertical="center")
 
     for r in results:
+        full = db.get_full_view_by_variant_id(r["variant_id"])
+        header = full[0] if full else {}
+
         stock_response = db.supabase.table("warehouse_stock").select(
             "stock, warehouses(name)"
         ).eq("variant_id", r["variant_id"]).execute()
 
-        if stock_response.data:
-            stocks = [f"{s['warehouses']['name']}: {s['stock']}" for s in stock_response.data]
-            stock_text = " | ".join(stocks)
-        else:
-            stock_text = "Sem stock"
+        stock_map = {}
+        for s in (stock_response.data or []):
+            stock_map[s["warehouses"]["name"]] = s["stock"]
 
-        ws.append(
-            [
-                r.get("gtin") or "",
-                r.get("nome_modelo") or "",
-                r.get("marca") or "",
-                r.get("cor") or "",
-                r.get("tamanho") or "",
-                r.get("ref_keyinvoice") or "",
-                r.get("ref_woocomerce") or "",
-                stock_text,
-            ]
-        )
+        row = [
+            r.get("gtin") or "",
+            r.get("ref_keyinvoice") or "",
+            r.get("ref_woocomerce") or "",
+            header.get("categoria") or "",
+            header.get("subcategoria") or "",
+            r.get("nome_modelo") or "",
+            header.get("marca") or r.get("marca") or "",
+            r.get("cor") or "",
+            r.get("tamanho") or "",
+        ]
+        row.extend([stock_map.get(name, 0) for name in warehouse_names])
+        ws.append(row)
 
     stream = BytesIO()
     wb.save(stream)
