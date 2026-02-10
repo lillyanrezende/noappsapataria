@@ -1,0 +1,157 @@
+{% extends 'webui/base.html' %}
+
+{% block content %}
+<div class="app-card">
+    <h2 class="mb-3">Cadastrar produto</h2>
+
+    {% for level, message in messages %}
+        <div class="alert alert-{{ level|default:'info' }}">{{ message }}</div>
+    {% endfor %}
+
+    <form method="post" class="row g-3">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="create_product">
+
+        <div class="col-md-4">
+            <label class="form-label">GTIN</label>
+            <input class="form-control" name="gtin" value="{{ form.gtin|default:'' }}">
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Ref KeyInvoice</label>
+            <input class="form-control" name="ref_keyinvoice" value="{{ form.ref_keyinvoice|default:'' }}">
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Ref WooCommerce</label>
+            <input class="form-control" name="ref_woocommerce" value="{{ form.ref_woocommerce|default:'' }}">
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Modelo</label>
+            <input class="form-control" name="nome_modelo" value="{{ form.nome_modelo|default:'' }}">
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Stock</label>
+            <input class="form-control" name="stock" value="{{ form.stock|default:'' }}">
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Marca</label>
+            <select class="form-select" name="brand_id">
+                {% for item in domains.brands %}
+                    <option value="{{ item.0 }}" {% if form.brand_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Fornecedor</label>
+            <select class="form-select" name="supplier_id">
+                {% for item in domains.suppliers %}
+                    <option value="{{ item.0 }}" {% if form.supplier_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Categoria</label>
+            <select class="form-select" name="category_id" id="category-select">
+                {% for item in domains.categories %}
+                    <option value="{{ item.0 }}" {% if form.category_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Subcategoria</label>
+            <select class="form-select" name="subcategory_id" id="subcategory-select">
+                {% for item in subcategories %}
+                    <option value="{{ item.0 }}" {% if form.subcategory_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Cor</label>
+            <select class="form-select" name="color_id">
+                {% for item in domains.colors %}
+                    <option value="{{ item.0 }}" {% if form.color_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Tamanho</label>
+            <select class="form-select" name="size_id">
+                {% for item in domains.sizes %}
+                    <option value="{{ item.0 }}" {% if form.size_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Armazem</label>
+            <select class="form-select" name="warehouse_id">
+                {% for item in domains.warehouses %}
+                    <option value="{{ item.0 }}" {% if form.warehouse_id == item.0|stringformat:'s' %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="col-12 d-flex gap-2">
+            <button class="btn btn-primary" type="submit">Cadastrar / Atualizar stock</button>
+            <a class="btn btn-outline-dark" href="{% url 'webui:create' %}">Limpar</a>
+        </div>
+    </form>
+
+    <hr class="my-4">
+
+    <h4 class="mb-3">Adicionar dominio</h4>
+    <form method="post" class="row g-3">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="add_domain">
+        <div class="col-md-3">
+            <label class="form-label">Tabela</label>
+            <select class="form-select" name="domain_table">
+                <option value="brands">Marcas</option>
+                <option value="suppliers">Fornecedores</option>
+                <option value="categories">Categorias</option>
+                <option value="subcategories">Subcategorias</option>
+                <option value="colors">Cores</option>
+                <option value="sizes">Tamanhos</option>
+                <option value="warehouses">Armazens</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Valor</label>
+            <input class="form-control" name="domain_value">
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">Categoria (para subcategoria)</label>
+            <select class="form-select" name="domain_category_id">
+                {% for item in domains.categories %}
+                    <option value="{{ item.0 }}">{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+            <button class="btn btn-accent" type="submit">Adicionar</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    const categorySelect = document.getElementById('category-select');
+    const subcategorySelect = document.getElementById('subcategory-select');
+
+    if (categorySelect) {
+        categorySelect.addEventListener('change', async () => {
+            const categoryId = categorySelect.value;
+            const resp = await fetch(`/api/subcategories/?category_id=${categoryId}`);
+            const data = await resp.json();
+            subcategorySelect.innerHTML = '';
+            data.items.forEach(item => {
+                const opt = document.createElement('option');
+                opt.value = item.id;
+                opt.textContent = item.name;
+                subcategorySelect.appendChild(opt);
+            });
+        });
+    }
+</script>
+{% endblock %}

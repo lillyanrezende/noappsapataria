@@ -1,0 +1,92 @@
+{% extends 'webui/base.html' %}
+
+{% block content %}
+<div class="app-card">
+    <h2 class="mb-3">Visualizar produto</h2>
+
+    {% for level, message in messages %}
+        <div class="alert alert-{{ level|default:'info' }}">{{ message }}</div>
+    {% endfor %}
+
+    <form method="post" class="row g-3 mb-4">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="search">
+
+        <div class="col-md-3">
+            <label class="form-label">Buscar por</label>
+            <select class="form-select" name="search_type">
+                <option value="gtin">GTIN</option>
+                <option value="ref_keyinvoice">Ref KeyInvoice</option>
+                <option value="ref_woocommerce">Ref WooCommerce</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Codigo</label>
+            <input class="form-control" name="search_value">
+        </div>
+        <div class="col-md-5 d-flex align-items-end gap-2">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+            <button class="btn btn-outline-dark" type="submit" name="action" value="export">Descarregar Excel</button>
+        </div>
+    </form>
+
+    {% if results %}
+    <div class="table-responsive mb-4">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>GTIN</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Cor</th>
+                    <th>Tamanho</th>
+                    <th>Ref KeyInvoice</th>
+                    <th>Ref WooCommerce</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in results %}
+                <tr>
+                    <td>{{ row.gtin }}</td>
+                    <td>{{ row.nome_modelo }}</td>
+                    <td>{{ row.marca }}</td>
+                    <td>{{ row.cor }}</td>
+                    <td>{{ row.tamanho }}</td>
+                    <td>{{ row.ref_keyinvoice }}</td>
+                    <td>{{ row.ref_woocomerce }}</td>
+                    <td>
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="action" value="details">
+                            <input type="hidden" name="variant_id" value="{{ row.variant_id }}">
+                            <button class="btn btn-sm btn-outline-dark" type="submit">Detalhes</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+
+    {% if details %}
+    <div class="app-card">
+        <h5>Detalhes</h5>
+        <p class="mb-2"><strong>GTIN:</strong> {{ details.gtin }} | <strong>Modelo:</strong> {{ details.nome_modelo }}</p>
+        <p class="mb-2"><strong>Marca:</strong> {{ details.marca }} | <strong>Fornecedor:</strong> {{ details.fornecedor }}</p>
+        <p class="mb-2"><strong>Categoria:</strong> {{ details.categoria }} / {{ details.subcategoria }}</p>
+        <p class="mb-3"><strong>Cor/Tamanho:</strong> {{ details.cor }} / {{ details.tamanho }}</p>
+        <h6>Stock por armazem</h6>
+        <ul class="list-group">
+            {% for stock in details_stocks %}
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>{{ stock.armazem }}</span>
+                    <span>{{ stock.stock }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

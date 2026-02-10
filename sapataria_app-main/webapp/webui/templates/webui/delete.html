@@ -1,0 +1,75 @@
+{% extends 'webui/base.html' %}
+
+{% block content %}
+<div class="app-card">
+    <h2 class="mb-3">Excluir produto</h2>
+
+    {% for level, message in messages %}
+        <div class="alert alert-{{ level|default:'info' }}">{{ message }}</div>
+    {% endfor %}
+
+    <form method="post" class="row g-3 mb-4">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="preview">
+
+        <div class="col-md-3">
+            <label class="form-label">Buscar por</label>
+            <select class="form-select" name="search_type">
+                <option value="gtin">GTIN</option>
+                <option value="ref_keyinvoice">Ref KeyInvoice</option>
+                <option value="ref_woocommerce">Ref WooCommerce</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Codigo</label>
+            <input class="form-control" name="search_value">
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+            <button class="btn btn-primary" type="submit">Carregar</button>
+        </div>
+    </form>
+
+    {% if loaded %}
+    <div class="mb-3">
+        <div class="pill">GTIN {{ loaded.gtin }}</div>
+    </div>
+    <div class="mb-3">
+        <strong>Modelo:</strong> {{ loaded.nome_modelo }}<br>
+        <strong>Marca:</strong> {{ loaded.marca }}<br>
+        <strong>Categoria:</strong> {{ loaded.categoria }} / {{ loaded.subcategoria }}<br>
+        <strong>Fornecedor:</strong> {{ loaded.fornecedor }}<br>
+        <strong>Cor/Tamanho:</strong> {{ loaded.cor }} / {{ loaded.tamanho }}
+    </div>
+
+    <div class="mb-4">
+        <h6>Stock por armazem</h6>
+        <ul class="list-group">
+            {% for stock in stocks %}
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>{{ stock.armazem }}</span>
+                    <span>{{ stock.stock }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <form method="post" onsubmit="return confirm('Confirmar exclusao?');" class="row g-3">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="delete_stock">
+        <input type="hidden" name="variant_id" value="{{ loaded.variant_id }}">
+
+        <div class="col-md-4">
+            <label class="form-label">Armazem</label>
+            <select class="form-select" name="warehouse_id">
+                {% for item in domains.warehouses %}
+                    <option value="{{ item.0 }}">{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+            <button class="btn btn-accent" type="submit">Excluir stock</button>
+        </div>
+    </form>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,207 @@
+{% extends 'webui/base.html' %}
+
+{% block content %}
+<div class="app-card">
+    <h2 class="mb-3">Alterar produto</h2>
+
+    {% for level, message in messages %}
+        <div class="alert alert-{{ level|default:'info' }}">{{ message }}</div>
+    {% endfor %}
+
+    <form method="post" class="row g-3 mb-4">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="search">
+
+        <div class="col-md-3">
+            <label class="form-label">Buscar por</label>
+            <select class="form-select" name="search_type">
+                <option value="gtin">GTIN</option>
+                <option value="ref_keyinvoice">Ref KeyInvoice</option>
+                <option value="ref_woocommerce">Ref WooCommerce</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Codigo</label>
+            <input class="form-control" name="search_value">
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+            <button class="btn btn-primary" type="submit">Procurar</button>
+        </div>
+    </form>
+
+    {% if search_results %}
+    <div class="table-responsive mb-4">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>Variant</th>
+                    <th>GTIN</th>
+                    <th>Modelo</th>
+                    <th>Cor</th>
+                    <th>Tamanho</th>
+                    <th>Ref KeyInvoice</th>
+                    <th>Ref WooCommerce</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in search_results %}
+                <tr>
+                    <td>{{ row.variant_id }}</td>
+                    <td>{{ row.gtin }}</td>
+                    <td>{{ row.nome_modelo }}</td>
+                    <td>{{ row.cor }}</td>
+                    <td>{{ row.tamanho }}</td>
+                    <td>{{ row.ref_keyinvoice }}</td>
+                    <td>{{ row.ref_woocomerce }}</td>
+                    <td>
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="action" value="load_variant">
+                            <input type="hidden" name="variant_id" value="{{ row.variant_id }}">
+                            <button class="btn btn-sm btn-outline-dark" type="submit">Carregar</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+
+    {% if loaded %}
+    <form method="post" class="row g-3 mb-4">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="save_item">
+        <input type="hidden" name="variant_id" value="{{ loaded.variant_id }}">
+        <input type="hidden" name="gtin" value="{{ loaded.gtin }}">
+
+        <div class="col-12">
+            <div class="pill">Item carregado: GTIN {{ loaded.gtin }} | Variant {{ loaded.variant_id }}</div>
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Modelo</label>
+            <input class="form-control" name="nome_modelo" value="{{ loaded.nome_modelo }}">
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Marca</label>
+            <select class="form-select" name="brand_id">
+                {% for item in domains.brands %}
+                    <option value="{{ item.0 }}" {% if loaded.marca_id == item.0 %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Fornecedor</label>
+            <select class="form-select" name="supplier_id">
+                {% for item in domains.suppliers %}
+                    <option value="{{ item.0 }}" {% if loaded.fornecedor_id == item.0 %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Categoria</label>
+            <select class="form-select" name="category_id" id="category-update">
+                {% for item in domains.categories %}
+                    <option value="{{ item.0 }}" {% if loaded.categoria_id == item.0 %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Subcategoria</label>
+            <select class="form-select" name="subcategory_id" id="subcategory-update">
+                {% for item in subcategories %}
+                    <option value="{{ item.0 }}" {% if loaded.subcategoria_id == item.0 %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Cor</label>
+            <select class="form-select" name="color_id">
+                {% for item in domains.colors %}
+                    <option value="{{ item.0 }}" {% if loaded.cor_id == item.0 %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Tamanho</label>
+            <select class="form-select" name="size_id">
+                {% for item in domains.sizes %}
+                    <option value="{{ item.0 }}" {% if loaded.tamanho_id == item.0 %}selected{% endif %}>{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Ref KeyInvoice</label>
+            <input class="form-control" name="ref_keyinvoice" value="{{ loaded.ref_keyinvoice }}">
+        </div>
+
+        <div class="col-12 d-flex gap-2">
+            <button class="btn btn-primary" type="submit">Guardar alteracoes</button>
+            <a class="btn btn-outline-dark" href="{% url 'webui:update' %}">Limpar</a>
+        </div>
+    </form>
+
+    <div class="app-card mb-4">
+        <h4 class="mb-3">Gestao de stock por armazem</h4>
+        <form method="post" class="row g-3">
+            {% csrf_token %}
+            <input type="hidden" name="variant_id" value="{{ loaded.variant_id }}">
+            <div class="col-md-4">
+                <label class="form-label">Armazem</label>
+                <select class="form-select" name="warehouse_id">
+                    {% for item in domains.warehouses %}
+                        <option value="{{ item.0 }}">{{ item.1 }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Quantidade</label>
+                <input class="form-control" name="stock">
+            </div>
+            <div class="col-md-5 d-flex align-items-end gap-2">
+                <button class="btn btn-primary" name="action" value="add_stock" type="submit">Adicionar</button>
+                <button class="btn btn-outline-dark" name="action" value="remove_stock" type="submit">Retirar</button>
+            </div>
+        </form>
+
+        <div class="mt-4">
+            <h6>Stock nos armazens</h6>
+            <ul class="list-group">
+                {% for stock in stocks %}
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>{{ stock.armazem }}</span>
+                        <span>{{ stock.stock }}</span>
+                    </li>
+                {% empty %}
+                    <li class="list-group-item">Sem stock</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+    const categoryUpdate = document.getElementById('category-update');
+    const subcategoryUpdate = document.getElementById('subcategory-update');
+
+    if (categoryUpdate) {
+        categoryUpdate.addEventListener('change', async () => {
+            const categoryId = categoryUpdate.value;
+            const resp = await fetch(`/api/subcategories/?category_id=${categoryId}`);
+            const data = await resp.json();
+            subcategoryUpdate.innerHTML = '';
+            data.items.forEach(item => {
+                const opt = document.createElement('option');
+                opt.value = item.id;
+                opt.textContent = item.name;
+                subcategoryUpdate.appendChild(opt);
+            });
+        });
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'webui/base.html' %}
+
+{% block content %}
+<div class="app-card">
+    <h2 class="mb-3">Alteracao em massa</h2>
+
+    {% for level, message in messages %}
+        <div class="alert alert-{{ level|default:'info' }}">{{ message }}</div>
+    {% endfor %}
+
+    <form method="post" enctype="multipart/form-data" class="row g-3 mb-4">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="process">
+
+        <div class="col-md-4">
+            <label class="form-label">Armazem</label>
+            <select class="form-select" name="warehouse_id">
+                {% for item in warehouses %}
+                    <option value="{{ item.0 }}">{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Operacao</label>
+            <select class="form-select" name="operation">
+                <option value="add">Adicionar</option>
+                <option value="remove">Remover</option>
+                <option value="set">Definir</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Quantidade</label>
+            <input class="form-control" name="quantity">
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Buscar por</label>
+            <select class="form-select" name="search_type">
+                <option value="ref_keyinvoice">Ref KeyInvoice</option>
+                <option value="ref_woocommerce">Ref WooCommerce</option>
+                <option value="gtin">GTIN</option>
+            </select>
+        </div>
+
+        <div class="col-12">
+            <label class="form-label">Codigos (um por linha)</label>
+            <textarea class="form-control" name="codes" rows="5"></textarea>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Excel (opcional)</label>
+            <input class="form-control" type="file" name="excel" accept=".xlsx">
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Processar</button>
+        </div>
+    </form>
+
+    {% if logs %}
+        <div class="app-card">
+            <h6>Resultado</h6>
+            <pre class="small">{% for line in logs %}{{ line }}
+{% endfor %}</pre>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends 'webui/base.html' %}
+
+{% block content %}
+<div class="app-card">
+    <h2 class="mb-3">Consultar armazem</h2>
+
+    {% for level, message in messages %}
+        <div class="alert alert-{{ level|default:'info' }}">{{ message }}</div>
+    {% endfor %}
+
+    <form method="post" class="row g-3 mb-4">
+        {% csrf_token %}
+        <div class="col-md-4">
+            <label class="form-label">Armazem</label>
+            <select class="form-select" name="warehouse_id">
+                {% for item in warehouses %}
+                    <option value="{{ item.0 }}">{{ item.1 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4 d-flex align-items-end gap-2">
+            <button class="btn btn-primary" name="action" value="load" type="submit">Carregar</button>
+            <button class="btn btn-outline-dark" name="action" value="export" type="submit">Descarregar Excel</button>
+        </div>
+    </form>
+
+    {% if rows %}
+    <div class="table-responsive mb-3">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>GTIN</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Cor</th>
+                    <th>Tamanho</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                    {% with variant=row.product_variant model=row.product_variant.product_model %}
+                    <tr>
+                        <td>{{ variant.gtin }}</td>
+                        <td>{{ model.nome_modelo }}</td>
+                        <td>{{ model.brands.name }}</td>
+                        <td>{{ variant.colors.name }}</td>
+                        <td>{{ variant.sizes.value }}</td>
+                        <td>{{ row.stock }}</td>
+                    </tr>
+                    {% endwith %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% if summary %}
+        <div class="small">Total de itens: {{ summary.total_items }} | Variacoes: {{ summary.count }}</div>
+    {% endif %}
+    {% endif %}
+</div>
+{% endblock %}
