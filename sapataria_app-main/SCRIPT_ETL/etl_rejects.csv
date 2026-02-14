@@ -1,0 +1,751 @@
+row_index,reason,ref_keyinvoice,ref_woocomerce,categoria,subcategoria,marca,nome,cor,tamanho,gtin
+1,GTIN inválido (menos de 8 dígitos),5731,nan,Senhora,Sapato Raso,SORRISO,HÉLIA,Bordeaux E Branco,37.5,000
+2,GTIN inválido (menos de 8 dígitos),5731,nan,Senhora,Sapato Raso,SORRISO,HÉLIA,Bordeaux E Branco,38,000
+4,GTIN inválido (menos de 8 dígitos),5731,nan,Senhora,Sapato Raso,SORRISO,HÉLIA,Bordeaux E Branco,39.5,000
+26,GTIN inválido (menos de 8 dígitos),5731,nan,Senhora,Sapato Raso,SORRISO,HÈLIA,Azul Navy E Creme,38.5,000
+27,GTIN inválido (menos de 8 dígitos),5731,nan,Senhora,Sapato Raso,SORRISO,HÈLIA,Azul Navy E Creme,39.5,000
+76,GTIN inválido (menos de 8 dígitos),5731,nan,Senhora,Sapato Raso,SORRISO,HÉLIA,Branco E Azul Bebe,36,000
+80,GTIN inválido (menos de 8 dígitos),5731,nan,Senhora,Sapato Raso,SORRISO,HÉLIA,Branco E Azul Bebe,39,000
+82,GTIN inválido (menos de 8 dígitos),5731,nan,Senhora,Sapato Raso,SORRISO,HÉLIA,Castanho E Cinza,38,000
+83,GTIN inválido (menos de 8 dígitos),5731,nan,Senhora,Sapato Raso,SORRISO,HÉLIA,Castanho E Cinza,38.5,000
+88,GTIN inválido (menos de 8 dígitos),5731,nan,Senhora,Sapato Raso,SORRISO,HELIA,Branco E Verde Claro,37,000
+90,GTIN inválido (menos de 8 dígitos),5731,nan,Senhora,Sapato Raso,SORRISO,HELIA,Branco E Verde Claro,38,000
+139,GTIN inválido (menos de 8 dígitos),2740,nan,Senhora,Sandálias,SORRISO,HELIANA,Creme E Preto,35,000
+140,GTIN inválido (menos de 8 dígitos),2740,nan,Senhora,Sandálias,SORRISO,HELIANA,Creme E Preto,36,000
+141,GTIN inválido (menos de 8 dígitos),2740,nan,Senhora,Sandálias,SORRISO,HELIANA,Creme E Preto,37,000
+142,GTIN inválido (menos de 8 dígitos),2740,nan,Senhora,Sandálias,SORRISO,HELIANA,Creme E Preto,38,000
+143,GTIN inválido (menos de 8 dígitos),2740,nan,Senhora,Sandálias,SORRISO,HELIANA,Creme E Preto,39,000
+146,GTIN inválido (menos de 8 dígitos),2740,nan,Senhora,Sandálias,SORRISO,HELIANA,Creme E Bordeaux,35,000
+149,GTIN inválido (menos de 8 dígitos),2740,nan,Senhora,Sandálias,SORRISO,HELIANA,Creme E Bordeaux,38,000
+151,GTIN inválido (menos de 8 dígitos),2740,nan,Senhora,Sandálias,SORRISO,HELIANA,Creme E Bordeaux,40,000
+152,GTIN inválido (menos de 8 dígitos),2740,nan,Senhora,Sandálias,SORRISO,HELIANA,Creme E Bordeaux,41,000
+153,GTIN inválido (menos de 8 dígitos),6864,nan,Senhora,Sapato Raso,SORRISO,NICOLY,Mel Camurça,35,000
+159,GTIN inválido (menos de 8 dígitos),6864,nan,Senhora,Sapato Raso,SORRISO,NICOLY,Azul Navy,35,000
+164,GTIN inválido (menos de 8 dígitos),6864,nan,Senhora,Sapato Raso,SORRISO,NICOLY,Azul Navy,37.5,000
+168,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÙLIA,Preto,35,000
+169,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÙLIA,Preto,36,000
+170,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÙLIA,Preto,37,000
+171,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÙLIA,Preto,38,000
+172,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÙLIA,Preto,39,000
+173,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÙLIA,Preto,40,000
+174,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÙLIA,Preto,41,000
+175,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÙLIA,Preto,42,000
+176,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÚLIA,Camel,35,000
+177,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÚLIA,Camel,36,000
+178,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÚLIA,Camel,37,000
+179,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÚLIA,Camel,38,000
+180,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÚLIA,Camel,39,000
+181,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÚLIA,Camel,40,000
+182,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÚLIA,Camel,41,000
+183,GTIN inválido (menos de 8 dígitos),7079,nan,Senhora,Sandálias,SORRISO,JÚLIA,Camel,42,000
+251,GTIN inválido (menos de 8 dígitos),7396,nan,Senhora,Sandália | Mule,SORRISO,Florence,Preto E Creme,40,000
+252,GTIN inválido (menos de 8 dígitos),7396,nan,Senhora,Sandália | Mule,SORRISO,Florence,Preto E Creme,41,000
+253,GTIN inválido (menos de 8 dígitos),7396,nan,Senhora,Sandália | Mule,SORRISO,Florence,Castanho E Creme,35,000
+254,GTIN inválido (menos de 8 dígitos),7396,nan,Senhora,Sandália | Mule,SORRISO,Florence,Castanho E Creme,36,000
+257,GTIN inválido (menos de 8 dígitos),7396,nan,Senhora,Sandália | Mule,SORRISO,Florence,Castanho E Creme,39,000
+258,GTIN inválido (menos de 8 dígitos),7396,nan,Senhora,Sandália | Mule,SORRISO,Florence,Castanho E Creme,40,000
+259,GTIN inválido (menos de 8 dígitos),7396,nan,Senhora,Sandália | Mule,SORRISO,Florence,Castanho E Creme,41,000
+447,GTIN inválido (menos de 8 dígitos),7480,nan,Senhora,Derby,SORRISO,Amélia,Castanho Camurça,36,000
+448,GTIN inválido (menos de 8 dígitos),7480,nan,Senhora,Derby,SORRISO,Amélia,Castanho Camurça,37,000
+449,GTIN inválido (menos de 8 dígitos),7480,nan,Senhora,Derby,SORRISO,Amélia,Castanho Camurça,38,000
+450,GTIN inválido (menos de 8 dígitos),7480,nan,Senhora,Derby,SORRISO,Amélia,Castanho Camurça,39,000
+451,GTIN inválido (menos de 8 dígitos),7480,nan,Senhora,Derby,SORRISO,Amélia,Castanho Camurça,40,000
+452,GTIN inválido (menos de 8 dígitos),7480,nan,Senhora,Derby,SORRISO,Amélia,Castanho Camurça,40,000
+454,GTIN inválido (menos de 8 dígitos),7483,nan,Senhora,Sandálias,SORRISO,Carmen,Creme,36,000
+461,GTIN inválido (menos de 8 dígitos),7483,nan,Senhora,Sandálias,SORRISO,Carmen,Mel,37,000
+463,GTIN inválido (menos de 8 dígitos),7483,nan,Senhora,Sandálias,SORRISO,Carmen,Mel,39,000
+472,GTIN inválido (menos de 8 dígitos),7488,nan,Senhora,Sapato Raso,SORRISO,Martina,Dourado E Prata,35,000
+473,GTIN inválido (menos de 8 dígitos),7488,nan,Senhora,Sapato Raso,SORRISO,Martina,Dourado E Prata,36,000
+474,GTIN inválido (menos de 8 dígitos),7488,nan,Senhora,Sapato Raso,SORRISO,Martina,Dourado E Prata,37,000
+475,GTIN inválido (menos de 8 dígitos),7488,nan,Senhora,Sapato Raso,SORRISO,Martina,Dourado E Prata,38,000
+476,GTIN inválido (menos de 8 dígitos),7488,nan,Senhora,Sapato Raso,SORRISO,Martina,Dourado E Prata,39,000
+477,GTIN inválido (menos de 8 dígitos),7488,nan,Senhora,Sapato Raso,SORRISO,Martina,Dourado E Prata,40,000
+478,GTIN inválido (menos de 8 dígitos),7488,nan,Senhora,Sapato Raso,SORRISO,Martina,Dourado E Prata,41,000
+500,GTIN inválido (menos de 8 dígitos),23621,nan,Senhora,Botas,Tavares,Fiona,Preto,37,000
+501,GTIN inválido (menos de 8 dígitos),23621,nan,Senhora,Botas,Tavares,Fiona,Preto,39,000
+502,GTIN inválido (menos de 8 dígitos),23621,nan,Senhora,Botas,Tavares,Fiona,Preto,40,000
+503,GTIN inválido (menos de 8 dígitos),23621,nan,Senhora,Botas,Tavares,Fiona,Nude,35,000
+504,GTIN inválido (menos de 8 dígitos),23621,nan,Senhora,Botas,Tavares,Fiona,Nude,36,000
+505,GTIN inválido (menos de 8 dígitos),23621,nan,Senhora,Botas,Tavares,Fiona,Nude,37,000
+506,GTIN inválido (menos de 8 dígitos),23621,nan,Senhora,Botas,Tavares,Fiona,Nude,38,000
+507,GTIN inválido (menos de 8 dígitos),23621,nan,Senhora,Botas,Tavares,Fiona,Nude,39,000
+508,GTIN inválido (menos de 8 dígitos),23621,nan,Senhora,Botas,Tavares,Fiona,Nude,40,000
+509,GTIN inválido (menos de 8 dígitos),23621,nan,Senhora,Botas,Tavares,Fiona,Nude,41,000
+510,GTIN inválido (menos de 8 dígitos),25802,nan,Senhora,Botas,Tavares,Ofélia,Preto,37,000
+511,GTIN inválido (menos de 8 dígitos),25802,nan,Senhora,Botas,Tavares,Ofélia,Preto,38,000
+512,GTIN inválido (menos de 8 dígitos),25802,nan,Senhora,Botas,Tavares,Ofélia,Preto,39,000
+513,GTIN inválido (menos de 8 dígitos),25802,nan,Senhora,Botas,Tavares,Ofélia,Preto,41,000
+514,GTIN inválido (menos de 8 dígitos),25802,nan,Senhora,Botas,Tavares,Ofélia,Castanho Escuro,37,000
+515,GTIN inválido (menos de 8 dígitos),25802,nan,Senhora,Botas,Tavares,Ofélia,Castanho Escuro,38,000
+516,GTIN inválido (menos de 8 dígitos),25802,nan,Senhora,Botas,Tavares,Ofélia,Castanho Escuro,39,000
+517,GTIN inválido (menos de 8 dígitos),25802,nan,Senhora,Botas,Tavares,Ofélia,Castanho Escuro,41,000
+518,GTIN inválido (menos de 8 dígitos),21266,nan,Senhora,Botas,Tavares,Emilia,Castanho Esverdeado,35,000
+519,GTIN inválido (menos de 8 dígitos),21266,nan,Senhora,Botas,Tavares,Emilia,Castanho Esverdeado,36,000
+520,GTIN inválido (menos de 8 dígitos),21266,nan,Senhora,Botas,Tavares,Emilia,Castanho Esverdeado,38,000
+521,GTIN inválido (menos de 8 dígitos),21266,nan,Senhora,Botas,Tavares,Emilia,Castanho Esverdeado,39,000
+522,GTIN inválido (menos de 8 dígitos),21266,nan,Senhora,Botas,Tavares,Emilia,Castanho Esverdeado,40,000
+523,GTIN inválido (menos de 8 dígitos),21266,nan,Senhora,Botas,Tavares,Emilia,Castanho Esverdeado,41,000
+524,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Preto,35,000
+525,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Preto,36,000
+526,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Preto,37,000
+527,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Preto,38,000
+528,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Preto,39,000
+529,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Preto,40,000
+530,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Verde,36,000
+531,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Verde,37,000
+532,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Verde,38,000
+533,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Verde,39,000
+534,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Verde,40,000
+535,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Castanho Escuro,37,000
+536,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Castanho Escuro,38,000
+537,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Castanho Escuro,39,000
+538,GTIN inválido (menos de 8 dígitos),25860,nan,Senhora,Botas,Tavares,Sana,Castanho Escuro,40,000
+539,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Preto,36,000
+540,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Preto,37,000
+541,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Preto,38,000
+542,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Preto,39,000
+543,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Preto,40,000
+544,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Preto,41,000
+545,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Preto,42,000
+546,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Camel,35,000
+547,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Camel,36,000
+548,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Camel,37,000
+549,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Camel,38,000
+550,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Camel,39,000
+551,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Camel,40,000
+552,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Vermelho,35,000
+553,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Vermelho,36,000
+554,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Vermelho,37,000
+555,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Vermelho,38,000
+556,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Vermelho,39,000
+557,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Vermelho,40,000
+558,GTIN inválido (menos de 8 dígitos),25953,nan,Senhora,Loafer,Tavares,Lisa,Vermelho,41,000
+559,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Preto,35,000
+560,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Preto,36,000
+561,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Preto,37,000
+562,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Preto,38,000
+563,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Preto,39,000
+564,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Preto,40,000
+565,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Preto,41,000
+566,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Preto,42,000
+567,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Castanho |`25,35,000
+568,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Castanho |`26,36,000
+569,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Castanho |`27,37,000
+570,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Castanho |`28,38,000
+571,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Castanho |`29,39,000
+572,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Castanho |`30,40,000
+573,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Castanho |`31,41,000
+574,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Castanho |`32,42,000
+575,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Bordeaux,35,000
+576,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Bordeaux,36,000
+577,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Bordeaux,37,000
+578,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Bordeaux,38,000
+579,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Bordeaux,39,000
+580,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Bordeaux,40,000
+581,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Bordeaux,41,000
+582,GTIN inválido (menos de 8 dígitos),23203,nan,Senhora,Sandálias,Tavares,Paola,Bordeaux,42,000
+583,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Preto,34,000
+584,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Preto,35,000
+585,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Preto,36,000
+586,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Preto,37,000
+587,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Preto,38,000
+588,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Preto,39,000
+589,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Preto,40,000
+590,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Preto,41,000
+591,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Preto,42,000
+592,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Verde,35,000
+593,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Verde Escuro,36,000
+594,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Verde Escuro,37,000
+595,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Verde Escuro,38,000
+596,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Verde Escuro,39,000
+597,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Verde Escuro,40,000
+598,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Verde Escuro,41,000
+599,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Verde Escuro,42,000
+600,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Branco,35,000
+601,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Branco,36,000
+602,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Branco,37,000
+603,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Branco,38,000
+604,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Branco,39,000
+605,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Branco,40,000
+606,GTIN inválido (menos de 8 dígitos),20850,nan,Senhora,Sandálias,Tavares,Mary,Branco,41,000
+607,GTIN inválido (menos de 8 dígitos),1203,nan,Senhora,Loafer,Martico,Porto,"Bordeaux, Branco E Azul",35,000
+608,GTIN inválido (menos de 8 dígitos),1203,nan,Senhora,Loafer,Martico,Porto,"Bordeaux, Branco E Azul",36,000
+609,GTIN inválido (menos de 8 dígitos),1203,nan,Senhora,Loafer,Martico,Porto,"Bordeaux, Branco E Azul",37,000
+610,GTIN inválido (menos de 8 dígitos),1203,nan,Senhora,Loafer,Martico,Porto,"Bordeaux, Branco E Azul",38,000
+611,GTIN inválido (menos de 8 dígitos),1203,nan,Senhora,Loafer,Martico,Porto,"Bordeaux, Branco E Azul",39,000
+612,GTIN inválido (menos de 8 dígitos),1203,nan,Senhora,Loafer,Martico,Porto,"Bordeaux, Branco E Azul",40,000
+613,GTIN inválido (menos de 8 dígitos),1203,nan,Senhora,Loafer,Martico,Porto,"Bordeaux, Branco E Azul",41,000
+614,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Preto Polido,35,000
+615,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Preto Polido,36,000
+616,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Preto Polido,37,000
+617,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Preto Polido,38,000
+618,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Preto Polido,39,000
+619,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Preto Polido,40,000
+620,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Preto Polido,41,000
+621,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,35,000
+622,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,36,000
+623,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,37,000
+624,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,38,000
+625,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,39,000
+626,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,40,000
+627,GTIN inválido (menos de 8 dígitos),1703/3,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,41,000
+628,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Vermelho E Branco,36,000
+629,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Vermelho E Branco,37,000
+630,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Vermelho E Branco,38,000
+631,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Camel E Branco,35,000
+632,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Camel E Branco,36,000
+633,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Camel E Branco,37,000
+634,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Camel E Branco,41,000
+635,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Preto Polido,35,000
+636,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Preto Polido,36,000
+637,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Preto Polido,37,000
+638,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Preto Polido,38,000
+639,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Preto Polido,39,000
+640,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Preto Polido,40,000
+641,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Preto Polido,41,000
+642,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,35,000
+643,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,36,000
+644,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,37,000
+645,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,38,000
+646,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,39,000
+647,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,40,000
+648,GTIN inválido (menos de 8 dígitos),1703,nan,Senhora,Loafer,Martico,Selena,Bordeaux Polido,41,000
+649,GTIN inválido (menos de 8 dígitos),1243,nan,Senhora,Loafer,Martico,Faro,Verde E Castanho,36,000
+650,GTIN inválido (menos de 8 dígitos),1243,nan,Senhora,Loafer,Martico,Faro,Verde E Castanho,37,000
+651,GTIN inválido (menos de 8 dígitos),1243,nan,Senhora,Loafer,Martico,Faro,Verde E Castanho,38,000
+652,GTIN inválido (menos de 8 dígitos),1243,nan,Senhora,Loafer,Martico,Faro,Verde E Castanho,39,000
+653,GTIN inválido (menos de 8 dígitos),1243,nan,Senhora,Loafer,Martico,Faro,Verde E Castanho,40,000
+654,GTIN inválido (menos de 8 dígitos),1423,nan,Senhora,Loafer,Martico,Lisboa,Bordeaux | Tijolo,36,000
+655,GTIN inválido (menos de 8 dígitos),1423,nan,Senhora,Loafer,Martico,Lisboa,Bordeaux | Tijolo,38,000
+656,GTIN inválido (menos de 8 dígitos),1423,nan,Senhora,Loafer,Martico,Lisboa,Bordeaux | Tijolo,39,000
+657,GTIN inválido (menos de 8 dígitos),1423,nan,Senhora,Loafer,Martico,Lisboa,Bordeaux | Tijolo,40,000
+658,GTIN inválido (menos de 8 dígitos),1502,nan,Senhora,Loafer,Martico,Beja,Padrão Animal,36,000
+659,GTIN inválido (menos de 8 dígitos),1502,nan,Senhora,Loafer,Martico,Beja,Padrão Animal,35,000
+660,GTIN inválido (menos de 8 dígitos),1502,nan,Senhora,Loafer,Martico,Beja,Padrão Animal,37,000
+661,GTIN inválido (menos de 8 dígitos),1502,nan,Senhora,Loafer,Martico,Beja,Padrão Animal,38,000
+662,GTIN inválido (menos de 8 dígitos),1502,nan,Senhora,Loafer,Martico,Beja,Padrão Animal,40,000
+663,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Preto,35,000
+664,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Preto,36,000
+665,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Preto,37,000
+666,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Preto,38,000
+667,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Preto,39,000
+668,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Preto,40,000
+669,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Preto,41,000
+670,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Preto,42,000
+671,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Bordeaux,36,000
+672,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Bordeaux,37,000
+673,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Bordeaux,38,000
+674,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Bordeaux,39,000
+675,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Bordeaux,40,000
+676,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Verde,35,000
+677,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Verde,36,000
+678,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Verde,37,000
+679,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Verde,38,000
+680,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Verde,39,000
+681,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Verde,40,000
+682,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Verde,41,000
+683,GTIN inválido (menos de 8 dígitos),18747,nan,Senhora,Botas,Martico,Pearl,Verde,42,000
+684,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Preto,35,000
+685,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Preto,36,000
+686,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Preto,37,000
+687,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Preto,38,000
+688,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Preto,39,000
+689,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Preto,40,000
+690,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Preto,41,000
+691,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Preto,42,000
+692,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Castanho Cognac,35,000
+693,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Castanho Cognac,36,000
+694,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Castanho Cognac,37,000
+695,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Castanho Cognac,38,000
+696,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Castanho Cognac,39,000
+697,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Castanho Cognac,40,000
+698,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Castanho Cognac,41,000
+699,GTIN inválido (menos de 8 dígitos),18750,nan,Senhora,Botas,Martico,Emily,Castanho Cognac,42,000
+700,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Castanho Cognac,35,000
+701,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Castanho Cognac,36,000
+702,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Castanho Cognac,37,000
+703,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Castanho Cognac,38,000
+704,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Castanho Cognac,39,000
+705,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Castanho Cognac,40,000
+706,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Castanho Cognac,41,000
+707,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Castanho Cognac,42,000
+708,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Preto,35,000
+709,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Preto,36,000
+710,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Preto,37,000
+711,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Preto,38,000
+712,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Preto,39,000
+713,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Preto,40,000
+714,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Preto,41,000
+715,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Preto,42,000
+716,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Verde,35,000
+717,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Verde,36,000
+718,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Verde,37,000
+719,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Verde,38,000
+720,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Verde,39,000
+721,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Verde,40,000
+722,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Verde,41,000
+723,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Verde,42,000
+724,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Vermelho,35,000
+725,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Vermelho,37,000
+726,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Vermelho,39,000
+727,GTIN inválido (menos de 8 dígitos),19574,nan,Senhora,Oxford,Martico,Grace,Vermelho,40,000
+728,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Preto,35,000
+729,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Preto,36,000
+730,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Preto,37,000
+731,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Preto,38,000
+732,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Preto,39,000
+733,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Preto,40,000
+734,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Preto,41,000
+735,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Preto,42,000
+736,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Verde,35,000
+737,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Verde,36,000
+738,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Verde,37,000
+739,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Verde,38,000
+740,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Verde,39,000
+741,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Verde,40,000
+742,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Verde,41,000
+743,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Cognac Castanho,35,000
+744,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Cognac Castanho,36,000
+745,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Cognac Castanho,37,000
+746,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Cognac Castanho,38,000
+747,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Cognac Castanho,39,000
+748,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Cognac Castanho,40,000
+749,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Cognac Castanho,41,000
+750,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Cognac Castanho,42,000
+751,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Vermelho,36,000
+752,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Vermelho,36,000
+753,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Vermelho,37,000
+754,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Vermelho,38,000
+755,GTIN inválido (menos de 8 dígitos),19608,nan,Senhora,Oxford,Martico,Dori,Vermelho,39,000
+756,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Azul,35,000
+757,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Azul,36,000
+758,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Azul,37,000
+759,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Azul,38,000
+760,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Azul,39,000
+761,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Azul,40,000
+762,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Castanho Escuro,35,000
+763,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Castanho Escuro,36,000
+764,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Castanho Escuro,37,000
+765,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Castanho Escuro,38,000
+766,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Castanho Escuro,39,000
+767,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Castanho Escuro,40,000
+768,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Castanho Escuro,41,000
+769,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Castanho Escuro,42,000
+770,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Preto,35,000
+771,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Preto,36,000
+772,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Preto,37,000
+773,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Preto,38,000
+774,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Preto,39,000
+775,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Preto,40,000
+776,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Preto,41,000
+777,GTIN inválido (menos de 8 dígitos),19610,nan,Senhora,Fivela,Martico,Josi,Preto,42,000
+778,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Azul,35,000
+779,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Azul,36,000
+780,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Azul,37,000
+781,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Azul,38,000
+782,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Azul,39,000
+783,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Azul,40,000
+784,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Azul,41,000
+785,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Azul,42,000
+786,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Preto,35,000
+787,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Preto,36,000
+788,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Preto,37,000
+789,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Preto,38,000
+790,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Preto,39,000
+791,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Preto,40,000
+792,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Preto,41,000
+793,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Preto,42,000
+794,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Vermelho,35,000
+795,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Vermelho,36,000
+796,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Vermelho,37,000
+797,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Vermelho,38,000
+798,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Vermelho,39,000
+799,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Vermelho,40,000
+800,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Verde,35,000
+801,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Verde,36,000
+802,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Verde,37,000
+803,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Verde,38,000
+804,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Verde,39,000
+805,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Verde,40,000
+806,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Verde,41,000
+807,GTIN inválido (menos de 8 dígitos),19612,nan,Senhora,Loafer,Martico,Meg,Verde,42,000
+808,GTIN inválido (menos de 8 dígitos),82964,nan,Senhora,Botas,Hercules,Elise,Bege Camurça,35,000
+809,GTIN inválido (menos de 8 dígitos),82964,nan,Senhora,Botas,Hercules,Elise,Bege Camurça,36,000
+810,GTIN inválido (menos de 8 dígitos),82964,nan,Senhora,Botas,Hercules,Elise,Bege Camurça,37,000
+811,GTIN inválido (menos de 8 dígitos),82964,nan,Senhora,Botas,Hercules,Elise,Bege Camurça,38,000
+812,GTIN inválido (menos de 8 dígitos),82964,nan,Senhora,Botas,Hercules,Elise,Bege Camurça,39,000
+813,GTIN inválido (menos de 8 dígitos),82964,nan,Senhora,Botas,Hercules,Elise,Bege Camurça,40,000
+814,GTIN inválido (menos de 8 dígitos),82964,nan,Senhora,Botas,Hercules,Elise,Bege Camurça,41,000
+815,GTIN inválido (menos de 8 dígitos),4334,nan,Homem,Sandálias,Hercules,Evan,Castanho Camurça,39,000
+816,GTIN inválido (menos de 8 dígitos),4334,nan,Homem,Sandálias,Hercules,Evan,Castanho Camurça,40,000
+817,GTIN inválido (menos de 8 dígitos),4334,nan,Homem,Sandálias,Hercules,Evan,Castanho Camurça,41,000
+818,GTIN inválido (menos de 8 dígitos),4334,nan,Homem,Sandálias,Hercules,Evan,Castanho Camurça,42,000
+819,GTIN inválido (menos de 8 dígitos),4334,nan,Homem,Sandálias,Hercules,Evan,Castanho Camurça,43,000
+820,GTIN inválido (menos de 8 dígitos),4334,nan,Homem,Sandálias,Hercules,Evan,Castanho Camurça,44,000
+821,GTIN inválido (menos de 8 dígitos),4334,nan,Homem,Sandálias,Hercules,Evan,Verde Camurça,30,000
+822,GTIN inválido (menos de 8 dígitos),4334,nan,Homem,Sandálias,Hercules,Evan,Verde Camurça,41,000
+823,GTIN inválido (menos de 8 dígitos),4334,nan,Homem,Sandálias,Hercules,Evan,Verde Camurça,42,000
+824,GTIN inválido (menos de 8 dígitos),4334,nan,Homem,Sandálias,Hercules,Evan,Verde Camurça,43,000
+825,GTIN inválido (menos de 8 dígitos),4334,nan,Homem,Sandálias,Hercules,Evan,Verde Camurça,44,000
+826,GTIN inválido (menos de 8 dígitos),4334,nan,Homem,Sandálias,Hercules,Evan,Verde Camurça,45,000
+827,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Castanho Ebony,38,000
+828,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Castanho Ebony,39,000
+829,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Castanho Ebony,40,000
+830,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Castanho Ebony,41,000
+831,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Castanho Ebony,42,000
+832,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Castanho Ebony,43,000
+833,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Castanho Ebony,44,000
+834,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Castanho Ebony,45,000
+835,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Castanho Ebony,46,000
+836,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Preto,37,000
+837,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Preto,38,000
+838,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Preto,39,000
+839,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Preto,40,000
+840,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Preto,41,000
+841,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Preto,42,000
+842,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Preto,43,000
+843,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Preto,44,000
+844,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Preto,45,000
+845,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Preto,46,000
+846,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Cinza Camurça,38,000
+847,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Cinza Camurça,39,000
+848,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Cinza Camurça,40,000
+849,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Cinza Camurça,41,000
+850,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Cinza Camurça,44,000
+851,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Mel Camurça,41,000
+852,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Mel Camurça,42,000
+853,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Mel Camurça,43,000
+854,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Mel Camurça,44,000
+855,GTIN inválido (menos de 8 dígitos),82548,nan,Homem,Botas,Hercules,Arlo,Mel Camurça,45,000
+856,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Preto Polido,39,000
+857,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Preto Polido,40,000
+858,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Preto Polido,41,000
+859,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Preto Polido,42,000
+860,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Preto Polido,43,000
+861,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Preto Polido,44,000
+862,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Preto Polido,45,000
+863,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Preto Polido,46,000
+864,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Bordeaux Polido,40,000
+865,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Bordeaux Polido,41,000
+866,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Bordeaux Polido,42,000
+867,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Bordeaux Polido,43,000
+868,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Bordeaux Polido,44,000
+869,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Bordeaux Polido,45,000
+870,GTIN inválido (menos de 8 dígitos),82596,nan,Homem,Loafer,Hercules,Ravi,Bordeaux Polido,46,000
+871,GTIN inválido (menos de 8 dígitos),82647,nan,Homem,Oxford,Hercules,Helmer,Castanho Escuro Camurça,39,000
+872,GTIN inválido (menos de 8 dígitos),82647,nan,Homem,Oxford,Hercules,Helmer,Castanho Escuro Camurça,40,000
+873,GTIN inválido (menos de 8 dígitos),82647,nan,Homem,Oxford,Hercules,Helmer,Castanho Escuro Camurça,41,000
+874,GTIN inválido (menos de 8 dígitos),82647,nan,Homem,Oxford,Hercules,Helmer,Castanho Escuro Camurça,42,000
+875,GTIN inválido (menos de 8 dígitos),82647,nan,Homem,Oxford,Hercules,Helmer,Castanho Escuro Camurça,43,000
+876,GTIN inválido (menos de 8 dígitos),82647,nan,Homem,Oxford,Hercules,Helmer,Castanho Escuro Camurça,44,000
+877,GTIN inválido (menos de 8 dígitos),82647,nan,Homem,Oxford,Hercules,Helmer,Castanho Escuro Camurça,45,000
+878,GTIN inválido (menos de 8 dígitos),82721,nan,Homem,Loafer,Hercules,Augusto,Castanho Escuro Camurça,39,000
+879,GTIN inválido (menos de 8 dígitos),82721,nan,Homem,Loafer,Hercules,Augusto,Castanho Escuro Camurça,40,000
+880,GTIN inválido (menos de 8 dígitos),82721,nan,Homem,Loafer,Hercules,Augusto,Castanho Escuro Camurça,41,000
+881,GTIN inválido (menos de 8 dígitos),82721,nan,Homem,Loafer,Hercules,Augusto,Castanho Escuro Camurça,42,000
+882,GTIN inválido (menos de 8 dígitos),82721,nan,Homem,Loafer,Hercules,Augusto,Castanho Escuro Camurça,43,000
+883,GTIN inválido (menos de 8 dígitos),82721,nan,Homem,Loafer,Hercules,Augusto,Castanho Escuro Camurça,44,000
+884,GTIN inválido (menos de 8 dígitos),82721,nan,Homem,Loafer,Hercules,Augusto,Castanho Escuro Camurça,45,000
+885,GTIN inválido (menos de 8 dígitos),82798,nan,Homem,Sandálias,Hercules,Reid,Castanho Ecuro,39,000
+886,GTIN inválido (menos de 8 dígitos),82798,nan,Homem,Sandálias,Hercules,Reid,Castanho Ecuro,41,000
+887,GTIN inválido (menos de 8 dígitos),82798,nan,Homem,Sandálias,Hercules,Reid,Castanho Ecuro,42,000
+888,GTIN inválido (menos de 8 dígitos),82798,nan,Homem,Sandálias,Hercules,Reid,Castanho Ecuro,43,000
+889,GTIN inválido (menos de 8 dígitos),82798,nan,Homem,Sandálias,Hercules,Reid,Castanho Ecuro,44,000
+890,GTIN inválido (menos de 8 dígitos),82798,nan,Homem,Sandálias,Hercules,Reid,Castanho Ecuro,45,000
+891,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Castanho,38,000
+892,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Castanho,39,000
+893,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Castanho,40,000
+894,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Castanho,41,000
+895,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Castanho,44,000
+896,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Castanho,41,000
+897,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Castanho,42,000
+898,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Castanho,43,000
+899,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Castanho,44,000
+900,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Castanho,45,000
+901,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Castanho,46,000
+902,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Castanho,47,000
+903,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Preto,38,000
+904,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Preto,39,000
+905,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Preto,40,000
+906,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Preto,41,000
+907,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Preto,44,000
+908,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Preto,41,000
+909,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Preto,42,000
+910,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Preto,43,000
+911,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Preto,44,000
+912,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Preto,45,000
+913,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Preto,46,000
+914,GTIN inválido (menos de 8 dígitos),82825,nan,Homem,Loafer,Hercules,Roberto,Preto,47,000
+915,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Preto,39,000
+916,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Preto,40,000
+917,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Preto,41,000
+918,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Preto,42,000
+919,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Preto,43,000
+920,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Preto,44,000
+921,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Preto,45,000
+922,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Preto,46,000
+923,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Preto,47,000
+924,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho,39,000
+925,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho,40,000
+926,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho,41,000
+927,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho,44,000
+928,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho,41,000
+929,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho,42,000
+930,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho,43,000
+931,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho,44,000
+932,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho,45,000
+933,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho Ebony,39,000
+934,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho Ebony,40,000
+935,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho Ebony,41,000
+936,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho Ebony,42,000
+937,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho Ebony,43,000
+938,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho Ebony,44,000
+939,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho Ebony,45,000
+940,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho Ebony,46,000
+941,GTIN inválido (menos de 8 dígitos),82833,nan,Homem,Oxford,Hercules,Cesare,Castanho Ebony,47,000
+942,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Preto,39,000
+943,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Preto,40,000
+944,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Preto,41,000
+945,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Preto,42,000
+946,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Preto,43,000
+947,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Preto,44,000
+948,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Preto,45,000
+949,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Preto,46,000
+950,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Castanho,39,000
+951,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Castanho,40,000
+952,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Castanho,41,000
+953,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Castanho,42,000
+954,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Castanho,43,000
+955,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Castanho,44,000
+956,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Castanho,45,000
+957,GTIN inválido (menos de 8 dígitos),82834,nan,Homem,Oxford,Hercules,Gil,Castanho,46,000
+958,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Bordeaux ( Novo),39,000
+959,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Bordeaux ( Novo),40,000
+960,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Bordeaux ( Novo),41,000
+961,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Bordeaux ( Novo),42,000
+962,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Bordeaux ( Novo),43,000
+963,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Bordeaux ( Novo),44,000
+964,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Bordeaux ( Novo),45,000
+965,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Bordeaux ( Novo),46,000
+966,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Preto,39,000
+967,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Preto,40,000
+968,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Preto,41,000
+969,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Preto,42,000
+970,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Preto,43,000
+971,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Preto,44,000
+972,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Preto,45,000
+973,GTIN inválido (menos de 8 dígitos),82865,nan,Homem,Fivela,Hercules,Daniel,Preto,46,000
+974,GTIN inválido (menos de 8 dígitos),82866,nan,Homem,Loafer,Hercules,Gary,Preto,42,000
+975,GTIN inválido (menos de 8 dígitos),82866,nan,Homem,Loafer,Hercules,Gary,Preto,43,000
+976,GTIN inválido (menos de 8 dígitos),82866,nan,Homem,Loafer,Hercules,Gary,Preto,44,000
+977,GTIN inválido (menos de 8 dígitos),82866,nan,Homem,Loafer,Hercules,Gary,Preto,45,000
+978,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Azul Camurça,39,000
+979,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Azul Camurça,40,000
+980,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Azul Camurça,41,000
+981,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Azul Camurça,42,000
+982,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Azul Camurça,43,000
+983,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Azul Camurça,44,000
+984,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Azul Camurça,45,000
+985,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Castanho Ebony,39,000
+986,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Castanho Ebony,40,000
+987,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Castanho Ebony,41,000
+988,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Castanho Ebony,42,000
+989,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Castanho Ebony,43,000
+990,GTIN inválido (menos de 8 dígitos),82887,nan,Homem,Botas,Hercules,Sasha,Castanho Ebony,44,000
+991,GTIN inválido (menos de 8 dígitos),82911,nan,Homem,Sandálias,Hercules,Aquila,Castanho Escuro,39,000
+992,GTIN inválido (menos de 8 dígitos),82911,nan,Homem,Sandálias,Hercules,Aquila,Castanho Escuro,40,000
+993,GTIN inválido (menos de 8 dígitos),82911,nan,Homem,Sandálias,Hercules,Aquila,Castanho Escuro,41,000
+994,GTIN inválido (menos de 8 dígitos),82911,nan,Homem,Sandálias,Hercules,Aquila,Castanho Escuro,42,000
+995,GTIN inválido (menos de 8 dígitos),82911,nan,Homem,Sandálias,Hercules,Aquila,Castanho Escuro,43,000
+996,GTIN inválido (menos de 8 dígitos),82911,nan,Homem,Sandálias,Hercules,Aquila,Castanho Escuro,44,000
+997,GTIN inválido (menos de 8 dígitos),82911,nan,Homem,Sandálias,Hercules,Aquila,Castanho Escuro,45,000
+998,GTIN inválido (menos de 8 dígitos),82925,nan,Homem,Loafer,Hercules,Nico,Azul Camurça,41,000
+999,GTIN inválido (menos de 8 dígitos),82925,nan,Homem,Loafer,Hercules,Nico,Azul Camurça,44,000
+1000,GTIN inválido (menos de 8 dígitos),82925,nan,Homem,Loafer,Hercules,Nico,Azul Camurça,45,000
+1001,GTIN inválido (menos de 8 dígitos),82925,nan,Homem,Loafer,Hercules,Nico,Verde Camurça,41,000
+1002,GTIN inválido (menos de 8 dígitos),82925,nan,Homem,Loafer,Hercules,Nico,Verde Camurça,43,000
+1003,GTIN inválido (menos de 8 dígitos),82925,nan,Homem,Loafer,Hercules,Nico,Verde Camurça,44,000
+1004,GTIN inválido (menos de 8 dígitos),82925,nan,Homem,Loafer,Hercules,Nico,Verde Camurça,45,000
+1005,GTIN inválido (menos de 8 dígitos),82937,nan,Homem,Loafer,Hercules,Peter,Mel Camurça,39,000
+1006,GTIN inválido (menos de 8 dígitos),82937,nan,Homem,Loafer,Hercules,Peter,Mel Camurça,40,000
+1007,GTIN inválido (menos de 8 dígitos),82937,nan,Homem,Loafer,Hercules,Peter,Mel Camurça,41,000
+1008,GTIN inválido (menos de 8 dígitos),82937,nan,Homem,Loafer,Hercules,Peter,Mel Camurça,42,000
+1009,GTIN inválido (menos de 8 dígitos),82937,nan,Homem,Loafer,Hercules,Peter,Mel Camurça,43,000
+1010,GTIN inválido (menos de 8 dígitos),82937,nan,Homem,Loafer,Hercules,Peter,Mel Camurça,44,000
+1011,GTIN inválido (menos de 8 dígitos),82937,nan,Homem,Loafer,Hercules,Peter,Mel Camurça,45,000
+1012,GTIN inválido (menos de 8 dígitos),82937,nan,Homem,Loafer,Hercules,Peter,Verde Camurça,39,000
+1013,GTIN inválido (menos de 8 dígitos),82937,nan,Homem,Loafer,Hercules,Peter,Verde Camurça,40,000
+1014,GTIN inválido (menos de 8 dígitos),82937,nan,Homem,Loafer,Hercules,Peter,Verde Camurça,43,000
+1015,GTIN inválido (menos de 8 dígitos),82937,nan,Homem,Loafer,Hercules,Peter,Verde Camurça,45,000
+1016,GTIN inválido (menos de 8 dígitos),82942,nan,Homem,Oxford,Hercules,Firminho,Castanho Escuro Camurça,39,000
+1017,GTIN inválido (menos de 8 dígitos),82942,nan,Homem,Oxford,Hercules,Firminho,Castanho Escuro Camurça,40,000
+1018,GTIN inválido (menos de 8 dígitos),82942,nan,Homem,Oxford,Hercules,Firminho,Castanho Escuro Camurça,41,000
+1019,GTIN inválido (menos de 8 dígitos),82942,nan,Homem,Oxford,Hercules,Firminho,Castanho Escuro Camurça,42,000
+1020,GTIN inválido (menos de 8 dígitos),82942,nan,Homem,Oxford,Hercules,Firminho,Castanho Escuro Camurça,43,000
+1021,GTIN inválido (menos de 8 dígitos),82942,nan,Homem,Oxford,Hercules,Firminho,Castanho Escuro Camurça,44,000
+1022,GTIN inválido (menos de 8 dígitos),82942,nan,Homem,Oxford,Hercules,Firminho,Castanho Escuro Camurça,45,000
+1023,GTIN inválido (menos de 8 dígitos),82943,nan,Homem,Sneaker,Hercules,Ralph,Castanho Ebony,40,000
+1024,GTIN inválido (menos de 8 dígitos),82943,nan,Homem,Sneaker,Hercules,Ralph,Castanho Ebony,41,000
+1025,GTIN inválido (menos de 8 dígitos),82943,nan,Homem,Sneaker,Hercules,Ralph,Castanho Ebony,42,000
+1026,GTIN inválido (menos de 8 dígitos),82943,nan,Homem,Sneaker,Hercules,Ralph,Castanho Ebony,43,000
+1027,GTIN inválido (menos de 8 dígitos),82943,nan,Homem,Sneaker,Hercules,Ralph,Castanho Ebony,44,000
+1028,GTIN inválido (menos de 8 dígitos),82943,nan,Homem,Sneaker,Hercules,Ralph,Castanho Ebony,45,000
+1029,GTIN inválido (menos de 8 dígitos),82943,nan,Homem,Sneaker,Hercules,Ralph,Castanho Ebony,46,000
+1030,GTIN inválido (menos de 8 dígitos),82943,nan,Homem,Sneaker,Hercules,Ralph,Branco,40,000
+1031,GTIN inválido (menos de 8 dígitos),82943,nan,Homem,Sneaker,Hercules,Ralph,Branco,41,000
+1032,GTIN inválido (menos de 8 dígitos),82943,nan,Homem,Sneaker,Hercules,Ralph,Branco,44,000
+1033,GTIN inválido (menos de 8 dígitos),82943,nan,Homem,Sneaker,Hercules,Ralph,Branco,45,000
+1034,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Camel,37,000
+1035,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Camel,38,000
+1036,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Camel,39,000
+1037,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Camel,41,000
+1038,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Camel,42,000
+1039,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Bordeaux,35,000
+1040,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Bordeaux,36,000
+1041,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Bordeaux,37,000
+1042,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Bordeaux,38,000
+1043,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Bordeaux,39,000
+1044,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Bordeaux,40,000
+1045,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Bordeaux,41,000
+1046,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Bordeaux,42,000
+1047,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Bordeaux,43,000
+1048,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Bordeaux,44,000
+1049,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Bordeaux,45,000
+1050,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Castanho Escuro,35,000
+1051,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Castanho Escuro,36,000
+1052,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Castanho Escuro,37,000
+1053,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Castanho Escuro,38,000
+1054,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Castanho Escuro,39,000
+1055,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Castanho Escuro,40,000
+1056,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Castanho Escuro,41,000
+1057,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Castanho Escuro,42,000
+1058,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Castanho Escuro,43,000
+1059,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Castanho Escuro,44,000
+1060,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Castanho Escuro,45,000
+1061,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Azul,38,000
+1062,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Azul,39,000
+1063,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Azul,40,000
+1064,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Azul,41,000
+1065,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Azul,42,000
+1066,GTIN inválido (menos de 8 dígitos),2395,nan,Unisex,Chinelos,Garcia Slippers,Robin,Azul,43,000
+1067,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Verde,37,000
+1068,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Verde,38,000
+1069,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Verde,39,000
+1070,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Verde,40,000
+1071,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Verde,41,000
+1072,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Verde,42,000
+1073,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Verde,43,000
+1074,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Verde,44,000
+1075,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Verde,45,000
+1076,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Verde,46,000
+1077,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Verde,47,000
+1078,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Preto,35,000
+1079,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Preto,36,000
+1080,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Preto,37,000
+1081,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Preto,38,000
+1082,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Preto,39,000
+1083,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Preto,40,000
+1084,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Preto,41,000
+1085,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Preto,42,000
+1086,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Preto,43,000
+1087,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Preto,44,000
+1088,GTIN inválido (menos de 8 dígitos),2596,nan,Unisex,Chinelos,Garcia Slippers,Roman,Preto,45,000
+1089,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1090,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1091,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1092,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1093,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1094,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1095,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1096,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1097,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1098,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1099,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1100,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1101,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1102,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1103,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1104,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1105,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1106,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1107,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1108,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1109,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1110,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1111,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1112,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1113,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1114,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1115,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1116,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1117,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1118,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1119,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1120,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1121,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1122,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1123,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1124,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1125,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1126,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1127,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1128,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1129,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1130,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1131,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1132,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1133,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1134,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1135,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1136,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1137,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1138,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1139,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1140,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1141,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1142,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1143,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1144,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1145,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1146,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1147,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1148,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1149,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1150,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1151,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1152,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1153,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1154,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1155,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1156,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1157,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1158,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1159,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1160,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1161,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1162,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1163,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1164,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1165,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1166,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1167,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1168,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1169,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1170,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1171,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1172,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1173,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1174,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1175,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1176,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1177,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1178,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1179,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1180,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1181,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1182,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1183,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1184,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1185,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1186,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
+1187,GTIN inválido (menos de 8 dígitos),nan,nan,nan,nan,nan,nan,nan,nan,000
