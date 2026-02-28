@@ -347,13 +347,9 @@ def upsert_stock_for_all_warehouses(
     stock_value: int,
     stats: Stats,
 ) -> None:
-    warehouses = sb.select("warehouses", select="id")
-    if not warehouses:
-        raise RuntimeError("Tabela warehouses está vazia. Não dá para criar stock.")
-
+    # Apenas warehouse_id = 2
     payload = [
-        {"variant_id": variant_id, "warehouse_id": int(w["id"]), "stock": stock_value}
-        for w in warehouses
+        {"variant_id": variant_id, "warehouse_id": 2, "stock": stock_value}
     ]
 
     sb.upsert("warehouse_stock", payload, on_conflict="variant_id,warehouse_id")
@@ -421,7 +417,7 @@ def main():
         suppliers_cache: Dict[str, int] = {}
 
         # fornecedor default (obrigatório no schema)
-        fornecedor_id = get_or_create_supplier(sb, default_supplier, suppliers_cache, stats)
+        fornecedor_id = 1 # Hardcoded para suppliers_id 1
 
         logger.info("Iniciando ETL (Supabase REST) | dry_run=%s | supplier=%s", dry_run, default_supplier)
 
