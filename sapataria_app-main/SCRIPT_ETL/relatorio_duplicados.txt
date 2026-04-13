@@ -1,0 +1,728 @@
+================================================================================
+AN┴LISE DE CËDIGOS INTERNOS (GTIN) DUPLICADOS
+================================================================================
+
+Total de linhas no Excel: 1228
+Linhas com GTIN vßlido: 1165
+
+Total de GTINs ·nicos: 1023
+Total de GTINs com repetiþÒo: 142
+
+================================================================================
+CËDIGOS REPETIDOS NA PLANILHA:
+================================================================================
+
+1. GTIN: 190400000809 - Repetido 2 vezes
+   Linhas: 810, 839
+      - Meg | Cor: Azul | Tamanho: 36
+      - Elise | Cor: Bege camurþa | Tamanho: 35
+
+2. GTIN: 190400000810 - Repetido 2 vezes
+   Linhas: 811, 840
+      - Meg | Cor: Azul | Tamanho: 37
+      - Elise | Cor: Bege camurþa | Tamanho: 36
+
+3. GTIN: 190400000811 - Repetido 2 vezes
+   Linhas: 812, 841
+      - Meg | Cor: Azul | Tamanho: 38
+      - Elise | Cor: Bege camurþa | Tamanho: 37
+
+4. GTIN: 190400000812 - Repetido 2 vezes
+   Linhas: 813, 842
+      - Meg | Cor: Azul | Tamanho: 39
+      - Elise | Cor: Bege camurþa | Tamanho: 38
+
+5. GTIN: 190400000813 - Repetido 2 vezes
+   Linhas: 814, 843
+      - Meg | Cor: Azul | Tamanho: 40
+      - Elise | Cor: Bege camurþa | Tamanho: 39
+
+6. GTIN: 190400000814 - Repetido 2 vezes
+   Linhas: 815, 844
+      - Meg | Cor: Azul | Tamanho: 41
+      - Elise | Cor: Bege camurþa | Tamanho: 40
+
+7. GTIN: 190400000815 - Repetido 2 vezes
+   Linhas: 816, 845
+      - Meg | Cor: Azul | Tamanho: 42
+      - Elise | Cor: Bege camurþa | Tamanho: 41
+
+8. GTIN: 190400000816 - Repetido 2 vezes
+   Linhas: 817, 846
+      - Meg | Cor: Preto | Tamanho: 35
+      - Evan | Cor: Castanho | Tamanho: 39
+
+9. GTIN: 190400000817 - Repetido 2 vezes
+   Linhas: 818, 847
+      - Meg | Cor: Preto | Tamanho: 36
+      - Evan | Cor: Castanho | Tamanho: 40
+
+10. GTIN: 190400000818 - Repetido 2 vezes
+   Linhas: 819, 848
+      - Meg | Cor: Preto | Tamanho: 37
+      - Evan | Cor: Castanho | Tamanho: 41
+
+11. GTIN: 190400000819 - Repetido 2 vezes
+   Linhas: 820, 849
+      - Meg | Cor: Preto | Tamanho: 38
+      - Evan | Cor: Castanho | Tamanho: 42
+
+12. GTIN: 190400000820 - Repetido 2 vezes
+   Linhas: 821, 850
+      - Meg | Cor: Preto | Tamanho: 39
+      - Evan | Cor: Castanho | Tamanho: 43
+
+13. GTIN: 190400000821 - Repetido 2 vezes
+   Linhas: 822, 851
+      - Meg | Cor: Preto | Tamanho: 40
+      - Evan | Cor: Castanho | Tamanho: 44
+
+14. GTIN: 190400000822 - Repetido 2 vezes
+   Linhas: 823, 852
+      - Meg | Cor: Preto | Tamanho: 41
+      - Evan | Cor: Verde  | Tamanho: 30
+
+15. GTIN: 190400000823 - Repetido 2 vezes
+   Linhas: 824, 853
+      - Meg | Cor: Preto | Tamanho: 42
+      - Evan | Cor: Verde  | Tamanho: 41
+
+16. GTIN: 190400000824 - Repetido 2 vezes
+   Linhas: 825, 854
+      - Meg | Cor: Vermelho | Tamanho: 35
+      - Evan | Cor: Verde  | Tamanho: 42
+
+17. GTIN: 190400000825 - Repetido 2 vezes
+   Linhas: 826, 855
+      - Meg | Cor: Vermelho | Tamanho: 36
+      - Evan | Cor: Verde  | Tamanho: 43
+
+18. GTIN: 190400000826 - Repetido 2 vezes
+   Linhas: 827, 856
+      - Meg | Cor: Vermelho | Tamanho: 37
+      - Evan | Cor: Verde  | Tamanho: 44
+
+19. GTIN: 190400000827 - Repetido 2 vezes
+   Linhas: 828, 857
+      - Meg | Cor: Vermelho | Tamanho: 38
+      - Evan | Cor: Verde  | Tamanho: 45
+
+20. GTIN: 190400000828 - Repetido 2 vezes
+   Linhas: 829, 858
+      - Meg | Cor: Vermelho | Tamanho: 39
+      - Arlo | Cor: Castanho  | Tamanho: 38
+
+21. GTIN: 190400000829 - Repetido 2 vezes
+   Linhas: 830, 859
+      - Meg | Cor: Vermelho | Tamanho: 40
+      - Arlo | Cor: Castanho  | Tamanho: 39
+
+22. GTIN: 190400000830 - Repetido 2 vezes
+   Linhas: 831, 860
+      - Meg | Cor: Verde | Tamanho: 35
+      - Arlo | Cor: Castanho | Tamanho: 40
+
+23. GTIN: 190400000831 - Repetido 2 vezes
+   Linhas: 832, 861
+      - Meg | Cor: Verde | Tamanho: 36
+      - Arlo | Cor: Castanho  | Tamanho: 41
+
+24. GTIN: 190400000832 - Repetido 2 vezes
+   Linhas: 833, 862
+      - Meg | Cor: Verde | Tamanho: 37
+      - Arlo | Cor: Castanho  | Tamanho: 42
+
+25. GTIN: 190400000833 - Repetido 2 vezes
+   Linhas: 834, 863
+      - Meg | Cor: Verde | Tamanho: 38
+      - Arlo | Cor: Castanho  | Tamanho: 43
+
+26. GTIN: 190400000834 - Repetido 2 vezes
+   Linhas: 835, 864
+      - Meg | Cor: Verde | Tamanho: 39
+      - Arlo | Cor: Castanho  | Tamanho: 44
+
+27. GTIN: 190400000835 - Repetido 2 vezes
+   Linhas: 836, 865
+      - Meg | Cor: Verde | Tamanho: 40
+      - Arlo | Cor: Castanho  | Tamanho: 45
+
+28. GTIN: 190400000836 - Repetido 2 vezes
+   Linhas: 837, 866
+      - Meg | Cor: Verde | Tamanho: 41
+      - Arlo | Cor: Castanho  | Tamanho: 46
+
+29. GTIN: 190400000837 - Repetido 2 vezes
+   Linhas: 838, 867
+      - Meg | Cor: Verde | Tamanho: 42
+      - Arlo | Cor: Preto | Tamanho: 37
+
+30. GTIN: 190400000838 - Repetido 2 vezes
+   Linhas: 868, 1079
+      - Arlo | Cor: Preto | Tamanho: 38
+      - Peter | Cor: Mel | Tamanho: 39
+
+31. GTIN: 190400000839 - Repetido 2 vezes
+   Linhas: 869, 1080
+      - Arlo | Cor: Preto | Tamanho: 39
+      - Peter | Cor: Mel | Tamanho: 40
+
+32. GTIN: 190400000840 - Repetido 2 vezes
+   Linhas: 870, 1081
+      - Arlo | Cor: Preto | Tamanho: 40
+      - Peter | Cor: Mel | Tamanho: 41
+
+33. GTIN: 190400000841 - Repetido 2 vezes
+   Linhas: 871, 1082
+      - Arlo | Cor: Preto | Tamanho: 41
+      - Peter | Cor: Mel | Tamanho: 42
+
+34. GTIN: 190400000842 - Repetido 2 vezes
+   Linhas: 872, 1083
+      - Arlo | Cor: Preto | Tamanho: 42
+      - Peter | Cor: Mel | Tamanho: 43
+
+35. GTIN: 190400000843 - Repetido 2 vezes
+   Linhas: 873, 1084
+      - Arlo | Cor: Preto | Tamanho: 43
+      - Peter | Cor: Mel | Tamanho: 44
+
+36. GTIN: 190400000844 - Repetido 2 vezes
+   Linhas: 874, 1085
+      - Arlo | Cor: Preto | Tamanho: 44
+      - Peter | Cor: Mel | Tamanho: 45
+
+37. GTIN: 190400000845 - Repetido 2 vezes
+   Linhas: 875, 1086
+      - Arlo | Cor: Preto | Tamanho: 45
+      - Peter | Cor: Verde | Tamanho: 39
+
+38. GTIN: 190400000846 - Repetido 2 vezes
+   Linhas: 876, 1087
+      - Arlo | Cor: Preto | Tamanho: 46
+      - Peter | Cor: Verde | Tamanho: 40
+
+39. GTIN: 190400000847 - Repetido 2 vezes
+   Linhas: 877, 1088
+      - Arlo | Cor: Cinza | Tamanho: 38
+      - Peter | Cor: Verde | Tamanho: 43
+
+40. GTIN: 190400000848 - Repetido 2 vezes
+   Linhas: 878, 1089
+      - Arlo | Cor: Cinza | Tamanho: 39
+      - Peter | Cor: Verde | Tamanho: 45
+
+41. GTIN: 190400000849 - Repetido 2 vezes
+   Linhas: 879, 1128
+      - Arlo | Cor: Cinza | Tamanho: 40
+      - Tom | Cor: Bordeaux | Tamanho: 39
+
+42. GTIN: 190400000850 - Repetido 2 vezes
+   Linhas: 880, 1129
+      - Arlo | Cor: Cinza | Tamanho: 41
+      - Tom | Cor: Bordeaux | Tamanho: 40
+
+43. GTIN: 190400000851 - Repetido 2 vezes
+   Linhas: 881, 1130
+      - Arlo | Cor: Cinza | Tamanho: 44
+      - Tom | Cor: Bordeaux | Tamanho: 41
+
+44. GTIN: 190400000852 - Repetido 2 vezes
+   Linhas: 882, 1131
+      - Arlo | Cor: Mel | Tamanho: 41
+      - Tom | Cor: Bordeaux | Tamanho: 42
+
+45. GTIN: 190400000853 - Repetido 2 vezes
+   Linhas: 883, 1132
+      - Arlo | Cor: Mel | Tamanho: 42
+      - Tom | Cor: Bordeaux | Tamanho: 43
+
+46. GTIN: 190400000854 - Repetido 2 vezes
+   Linhas: 884, 1133
+      - Arlo | Cor: Mel | Tamanho: 43
+      - Tom | Cor: Bordeaux | Tamanho: 44
+
+47. GTIN: 190400000855 - Repetido 2 vezes
+   Linhas: 885, 1134
+      - Arlo | Cor: Mel | Tamanho: 44
+      - Tom | Cor: Bordeaux | Tamanho: 45
+
+48. GTIN: 190400000856 - Repetido 2 vezes
+   Linhas: 886, 1135
+      - Arlo | Cor: Mel | Tamanho: 45
+      - Tom | Cor: Preto | Tamanho: 39
+
+49. GTIN: 190400000857 - Repetido 2 vezes
+   Linhas: 887, 1136
+      - Ravi | Cor: Preto | Tamanho: 39
+      - Tom | Cor: Preto | Tamanho: 40
+
+50. GTIN: 190400000858 - Repetido 2 vezes
+   Linhas: 888, 1137
+      - Ravi | Cor: Preto | Tamanho: 40
+      - Tom | Cor: Preto | Tamanho: 41
+
+51. GTIN: 190400000859 - Repetido 2 vezes
+   Linhas: 889, 1138
+      - Ravi | Cor: Preto | Tamanho: 41
+      - Tom | Cor: Preto | Tamanho: 42
+
+52. GTIN: 190400000860 - Repetido 2 vezes
+   Linhas: 890, 1139
+      - Ravi | Cor: Preto | Tamanho: 42
+      - Tom | Cor: Preto | Tamanho: 43
+
+53. GTIN: 190400000861 - Repetido 2 vezes
+   Linhas: 891, 1140
+      - Ravi | Cor: Preto | Tamanho: 43
+      - Tom | Cor: Preto | Tamanho: 44
+
+54. GTIN: 190400000862 - Repetido 2 vezes
+   Linhas: 892, 1141
+      - Ravi | Cor: Preto | Tamanho: 44
+      - Tom | Cor: Preto | Tamanho: 45
+
+55. GTIN: 190400000863 - Repetido 2 vezes
+   Linhas: 893, 1142
+      - Ravi | Cor: Preto | Tamanho: 45
+      - David | Cor: Castanho | Tamanho: 40
+
+56. GTIN: 190400000864 - Repetido 2 vezes
+   Linhas: 894, 1143
+      - Ravi | Cor: Preto | Tamanho: 46
+      - David | Cor: Castanho | Tamanho: 41
+
+57. GTIN: 190400000865 - Repetido 2 vezes
+   Linhas: 895, 1144
+      - Ravi | Cor: Bordeaux | Tamanho: 40
+      - David | Cor: Castanho | Tamanho: 42
+
+58. GTIN: 190400000866 - Repetido 2 vezes
+   Linhas: 896, 1145
+      - Ravi | Cor: Bordeaux | Tamanho: 41
+      - David | Cor: Castanho | Tamanho: 43
+
+59. GTIN: 190400000867 - Repetido 2 vezes
+   Linhas: 897, 1146
+      - Ravi | Cor: Bordeaux | Tamanho: 42
+      - David | Cor: Castanho | Tamanho: 44
+
+60. GTIN: 190400000868 - Repetido 2 vezes
+   Linhas: 898, 1147
+      - Ravi | Cor: Bordeaux | Tamanho: 43
+      - David | Cor: Castanho | Tamanho: 45
+
+61. GTIN: 190400000869 - Repetido 2 vezes
+   Linhas: 899, 1148
+      - Ravi | Cor: Bordeaux | Tamanho: 44
+      - James | Cor: Castanho escuro | Tamanho: 39
+
+62. GTIN: 190400000870 - Repetido 2 vezes
+   Linhas: 900, 1149
+      - Ravi | Cor: Bordeaux | Tamanho: 45
+      - James | Cor: Castanho escuro | Tamanho: 40
+
+63. GTIN: 190400000871 - Repetido 2 vezes
+   Linhas: 901, 1150
+      - Ravi | Cor: Bordeaux | Tamanho: 46
+      - James | Cor: Castanho escuro | Tamanho: 41
+
+64. GTIN: 190400000872 - Repetido 2 vezes
+   Linhas: 902, 1151
+      - Helmer | Cor: Castanho escuro  | Tamanho: 39
+      - James | Cor: Castanho escuro | Tamanho: 42
+
+65. GTIN: 190400000873 - Repetido 2 vezes
+   Linhas: 903, 1152
+      - Helmer | Cor: Castanho escuro  | Tamanho: 40
+      - James | Cor: Castanho escuro | Tamanho: 43
+
+66. GTIN: 190400000874 - Repetido 2 vezes
+   Linhas: 904, 1153
+      - Helmer | Cor: Castanho escuro  | Tamanho: 41
+      - James | Cor: Castanho escuro | Tamanho: 44
+
+67. GTIN: 190400000875 - Repetido 2 vezes
+   Linhas: 905, 1154
+      - Helmer | Cor: Castanho escuro  | Tamanho: 42
+      - James | Cor: Castanho escuro | Tamanho: 45
+
+68. GTIN: 190400000876 - Repetido 2 vezes
+   Linhas: 906, 1155
+      - Helmer | Cor: Castanho escuro  | Tamanho: 43
+      - Franco | Cor: Camel | Tamanho: 41
+
+69. GTIN: 190400000877 - Repetido 2 vezes
+   Linhas: 907, 1156
+      - Helmer | Cor: Castanho escuro  | Tamanho: 44
+      - Franco | Cor: Camel | Tamanho: 42
+
+70. GTIN: 190400000878 - Repetido 2 vezes
+   Linhas: 908, 1157
+      - Helmer | Cor: Castanho escuro  | Tamanho: 45
+      - Franco | Cor: Camel | Tamanho: 43
+
+71. GTIN: 190400000879 - Repetido 2 vezes
+   Linhas: 909, 1158
+      - Augusto | Cor: Castanho escuro  | Tamanho: 39
+      - Franco | Cor: Preto | Tamanho: 41
+
+72. GTIN: 190400000880 - Repetido 2 vezes
+   Linhas: 910, 1159
+      - Augusto | Cor: Castanho escuro  | Tamanho: 40
+      - Franco | Cor: Preto | Tamanho: 42
+
+73. GTIN: 190400000881 - Repetido 2 vezes
+   Linhas: 911, 1160
+      - Augusto | Cor: Castanho escuro  | Tamanho: 41
+      - Franco | Cor: Preto | Tamanho: 43
+
+74. GTIN: 190400000882 - Repetido 2 vezes
+   Linhas: 912, 1161
+      - Augusto | Cor: Castanho escuro  | Tamanho: 42
+      - Nero | Cor: Preto | Tamanho: 39
+
+75. GTIN: 190400000883 - Repetido 2 vezes
+   Linhas: 913, 1162
+      - Augusto | Cor: Castanho escuro  | Tamanho: 43
+      - Nero | Cor: Preto | Tamanho: 40
+
+76. GTIN: 190400000884 - Repetido 2 vezes
+   Linhas: 914, 1163
+      - Augusto | Cor: Castanho escuro  | Tamanho: 44
+      - Nero | Cor: Preto | Tamanho: 41
+
+77. GTIN: 190400000885 - Repetido 2 vezes
+   Linhas: 915, 1164
+      - Augusto | Cor: Castanho escuro  | Tamanho: 45
+      - Nero | Cor: Preto | Tamanho: 42
+
+78. GTIN: 190400000886 - Repetido 2 vezes
+   Linhas: 922, 1165
+      - Reid | Cor: Castanho ecuro | Tamanho: 39
+      - Nero | Cor: Preto | Tamanho: 43
+
+79. GTIN: 190400000887 - Repetido 2 vezes
+   Linhas: 923, 1166
+      - Reid | Cor: Castanho ecuro | Tamanho: 41
+      - Nero | Cor: Preto | Tamanho: 44
+
+80. GTIN: 190400000888 - Repetido 2 vezes
+   Linhas: 924, 1167
+      - Reid | Cor: Castanho ecuro | Tamanho: 42
+      - Nero | Cor: Preto | Tamanho: 45
+
+81. GTIN: 190400000889 - Repetido 2 vezes
+   Linhas: 925, 1168
+      - Reid | Cor: Castanho ecuro | Tamanho: 43
+      - Nero | Cor: Bordeaux | Tamanho: 39
+
+82. GTIN: 190400000890 - Repetido 2 vezes
+   Linhas: 926, 1169
+      - Reid | Cor: Castanho ecuro | Tamanho: 44
+      - Nero | Cor: Bordeaux | Tamanho: 40
+
+83. GTIN: 190400000891 - Repetido 2 vezes
+   Linhas: 927, 1170
+      - Reid | Cor: Castanho ecuro | Tamanho: 45
+      - Nero | Cor: Bordeaux | Tamanho: 41
+
+84. GTIN: 190400000892 - Repetido 2 vezes
+   Linhas: 928, 1171
+      - Roberto | Cor: Castanho | Tamanho: 38
+      - Nero | Cor: Bordeaux | Tamanho: 42
+
+85. GTIN: 190400000893 - Repetido 2 vezes
+   Linhas: 929, 1172
+      - Roberto | Cor: Castanho | Tamanho: 39
+      - Nero | Cor: Bordeaux | Tamanho: 43
+
+86. GTIN: 190400000894 - Repetido 2 vezes
+   Linhas: 930, 1173
+      - Roberto | Cor: Castanho | Tamanho: 40
+      - Nero | Cor: Bordeaux | Tamanho: 44
+
+87. GTIN: 190400000895 - Repetido 2 vezes
+   Linhas: 931, 1174
+      - Roberto | Cor: Castanho | Tamanho: 41
+      - Nero | Cor: Bordeaux | Tamanho: 45
+
+88. GTIN: 190400000896 - Repetido 2 vezes
+   Linhas: 932, 1175
+      - Roberto | Cor: Castanho | Tamanho: 44
+      - Robin | Cor: Camel | Tamanho: 37
+
+89. GTIN: 190400000897 - Repetido 2 vezes
+   Linhas: 933, 1176
+      - Roberto | Cor: Castanho | Tamanho: 41
+      - Robin | Cor: Camel | Tamanho: 38
+
+90. GTIN: 190400000898 - Repetido 2 vezes
+   Linhas: 934, 1177
+      - Roberto | Cor: Castanho | Tamanho: 42
+      - Robin | Cor: Camel | Tamanho: 39
+
+91. GTIN: 190400000899 - Repetido 2 vezes
+   Linhas: 935, 1178
+      - Roberto | Cor: Castanho | Tamanho: 43
+      - Robin | Cor: Camel | Tamanho: 41
+
+92. GTIN: 190400000900 - Repetido 2 vezes
+   Linhas: 936, 1179
+      - Roberto | Cor: Castanho | Tamanho: 44
+      - Robin | Cor: Camel | Tamanho: 42
+
+93. GTIN: 190400000901 - Repetido 2 vezes
+   Linhas: 937, 1180
+      - Roberto | Cor: Castanho | Tamanho: 45
+      - Robin | Cor: Bordeaux | Tamanho: 35
+
+94. GTIN: 190400000902 - Repetido 2 vezes
+   Linhas: 938, 1181
+      - Roberto | Cor: Castanho | Tamanho: 46
+      - Robin | Cor: Bordeaux | Tamanho: 36
+
+95. GTIN: 190400000903 - Repetido 2 vezes
+   Linhas: 939, 1182
+      - Roberto | Cor: Castanho | Tamanho: 47
+      - Robin | Cor: Bordeaux | Tamanho: 37
+
+96. GTIN: 190400000904 - Repetido 2 vezes
+   Linhas: 940, 1183
+      - Roberto | Cor: Preto | Tamanho: 38
+      - Robin | Cor: Bordeaux | Tamanho: 38
+
+97. GTIN: 190400000905 - Repetido 2 vezes
+   Linhas: 941, 1184
+      - Roberto | Cor: Preto | Tamanho: 39
+      - Robin | Cor: Bordeaux | Tamanho: 39
+
+98. GTIN: 190400000906 - Repetido 2 vezes
+   Linhas: 942, 1185
+      - Roberto | Cor: Preto | Tamanho: 40
+      - Robin | Cor: Bordeaux | Tamanho: 40
+
+99. GTIN: 190400000907 - Repetido 2 vezes
+   Linhas: 943, 1186
+      - Roberto | Cor: Preto | Tamanho: 41
+      - Robin | Cor: Bordeaux | Tamanho: 41
+
+100. GTIN: 190400000908 - Repetido 2 vezes
+   Linhas: 944, 1187
+      - Roberto | Cor: Preto | Tamanho: 44
+      - Robin | Cor: Bordeaux | Tamanho: 42
+
+101. GTIN: 190400000909 - Repetido 2 vezes
+   Linhas: 945, 1188
+      - Roberto | Cor: Preto | Tamanho: 41
+      - Robin | Cor: Bordeaux | Tamanho: 43
+
+102. GTIN: 190400000910 - Repetido 2 vezes
+   Linhas: 946, 1189
+      - Roberto | Cor: Preto | Tamanho: 42
+      - Robin | Cor: Bordeaux | Tamanho: 44
+
+103. GTIN: 190400000911 - Repetido 2 vezes
+   Linhas: 947, 1190
+      - Roberto | Cor: Preto | Tamanho: 43
+      - Robin | Cor: Bordeaux | Tamanho: 45
+
+104. GTIN: 190400000912 - Repetido 2 vezes
+   Linhas: 948, 1191
+      - Roberto | Cor: Preto | Tamanho: 44
+      - Robin | Cor: Castanho escuro | Tamanho: 35
+
+105. GTIN: 190400000913 - Repetido 2 vezes
+   Linhas: 949, 1192
+      - Roberto | Cor: Preto | Tamanho: 45
+      - Robin | Cor: Castanho escuro | Tamanho: 36
+
+106. GTIN: 190400000914 - Repetido 2 vezes
+   Linhas: 950, 1193
+      - Roberto | Cor: Preto | Tamanho: 46
+      - Robin | Cor: Castanho escuro | Tamanho: 37
+
+107. GTIN: 190400000915 - Repetido 2 vezes
+   Linhas: 951, 1194
+      - Roberto | Cor: Preto | Tamanho: 47
+      - Robin | Cor: Castanho escuro | Tamanho: 38
+
+108. GTIN: 190400000916 - Repetido 2 vezes
+   Linhas: 952, 1195
+      - Cesare | Cor: Preto | Tamanho: 39
+      - Robin | Cor: Castanho escuro | Tamanho: 39
+
+109. GTIN: 190400000917 - Repetido 2 vezes
+   Linhas: 953, 1196
+      - Cesare | Cor: Preto | Tamanho: 40
+      - Robin | Cor: Castanho escuro | Tamanho: 40
+
+110. GTIN: 190400000918 - Repetido 2 vezes
+   Linhas: 954, 1197
+      - Cesare | Cor: Preto | Tamanho: 41
+      - Robin | Cor: Castanho escuro | Tamanho: 41
+
+111. GTIN: 190400000919 - Repetido 2 vezes
+   Linhas: 955, 1198
+      - Cesare | Cor: Preto | Tamanho: 42
+      - Robin | Cor: Castanho escuro | Tamanho: 42
+
+112. GTIN: 190400000920 - Repetido 2 vezes
+   Linhas: 956, 1199
+      - Cesare | Cor: Preto | Tamanho: 43
+      - Robin | Cor: Castanho escuro | Tamanho: 43
+
+113. GTIN: 190400000921 - Repetido 2 vezes
+   Linhas: 957, 1200
+      - Cesare | Cor: Preto | Tamanho: 44
+      - Robin | Cor: Castanho escuro | Tamanho: 44
+
+114. GTIN: 190400000922 - Repetido 2 vezes
+   Linhas: 958, 1201
+      - Cesare | Cor: Preto | Tamanho: 45
+      - Robin | Cor: Castanho escuro | Tamanho: 45
+
+115. GTIN: 190400000923 - Repetido 2 vezes
+   Linhas: 959, 1202
+      - Cesare | Cor: Preto | Tamanho: 46
+      - Robin | Cor: Azul | Tamanho: 38
+
+116. GTIN: 190400000924 - Repetido 2 vezes
+   Linhas: 960, 1203
+      - Cesare | Cor: Preto | Tamanho: 47
+      - Robin | Cor: Azul | Tamanho: 39
+
+117. GTIN: 190400000925 - Repetido 2 vezes
+   Linhas: 961, 1204
+      - Cesare | Cor: Castanho mÚdio | Tamanho: 39
+      - Robin | Cor: Azul | Tamanho: 40
+
+118. GTIN: 190400000926 - Repetido 2 vezes
+   Linhas: 962, 1205
+      - Cesare | Cor: Castanho mÚdio | Tamanho: 40
+      - Robin | Cor: Azul | Tamanho: 41
+
+119. GTIN: 190400000927 - Repetido 2 vezes
+   Linhas: 963, 1206
+      - Cesare | Cor: Castanho mÚdio | Tamanho: 41
+      - Robin | Cor: Azul | Tamanho: 42
+
+120. GTIN: 190400000928 - Repetido 2 vezes
+   Linhas: 964, 1207
+      - Cesare | Cor: Castanho mÚdio | Tamanho: 44
+      - Robin | Cor: Azul | Tamanho: 43
+
+121. GTIN: 190400000929 - Repetido 2 vezes
+   Linhas: 965, 1208
+      - Cesare | Cor: Castanho mÚdio | Tamanho: 41
+      - Roman | Cor: Verde | Tamanho: 37
+
+122. GTIN: 190400000930 - Repetido 2 vezes
+   Linhas: 966, 1209
+      - Cesare | Cor: Castanho mÚdio | Tamanho: 42
+      - Roman | Cor: Verde | Tamanho: 38
+
+123. GTIN: 190400000931 - Repetido 2 vezes
+   Linhas: 967, 1210
+      - Cesare | Cor: Castanho mÚdio | Tamanho: 43
+      - Roman | Cor: Verde | Tamanho: 39
+
+124. GTIN: 190400000932 - Repetido 2 vezes
+   Linhas: 968, 1211
+      - Cesare | Cor: Castanho mÚdio | Tamanho: 44
+      - Roman | Cor: Verde | Tamanho: 40
+
+125. GTIN: 190400000933 - Repetido 2 vezes
+   Linhas: 969, 1212
+      - Cesare | Cor: Castanho mÚdio | Tamanho: 45
+      - Roman | Cor: Verde | Tamanho: 41
+
+126. GTIN: 190400000934 - Repetido 2 vezes
+   Linhas: 970, 1213
+      - Cesare | Cor: Castanho  | Tamanho: 39
+      - Roman | Cor: Verde | Tamanho: 42
+
+127. GTIN: 190400000935 - Repetido 2 vezes
+   Linhas: 971, 1214
+      - Cesare | Cor: Castanho  | Tamanho: 40
+      - Roman | Cor: Verde | Tamanho: 43
+
+128. GTIN: 190400000936 - Repetido 2 vezes
+   Linhas: 972, 1215
+      - Cesare | Cor: Castanho  | Tamanho: 41
+      - Roman | Cor: Verde | Tamanho: 44
+
+129. GTIN: 190400000937 - Repetido 2 vezes
+   Linhas: 973, 1216
+      - Cesare | Cor: Castanho  | Tamanho: 42
+      - Roman | Cor: Verde | Tamanho: 45
+
+130. GTIN: 190400000938 - Repetido 2 vezes
+   Linhas: 974, 1217
+      - Cesare | Cor: Castanho  | Tamanho: 43
+      - Roman | Cor: Verde | Tamanho: 46
+
+131. GTIN: 190400000939 - Repetido 2 vezes
+   Linhas: 975, 1218
+      - Cesare | Cor: Castanho  | Tamanho: 44
+      - Roman | Cor: Verde | Tamanho: 47
+
+132. GTIN: 190400000940 - Repetido 2 vezes
+   Linhas: 976, 1219
+      - Cesare | Cor: Castanho  | Tamanho: 45
+      - Roman | Cor: Preto | Tamanho: 35
+
+133. GTIN: 190400000941 - Repetido 2 vezes
+   Linhas: 977, 1220
+      - Cesare | Cor: Castanho  | Tamanho: 46
+      - Roman | Cor: Preto | Tamanho: 36
+
+134. GTIN: 190400000942 - Repetido 2 vezes
+   Linhas: 978, 1221
+      - Cesare | Cor: Castanho  | Tamanho: 47
+      - Roman | Cor: Preto | Tamanho: 37
+
+135. GTIN: 190400000943 - Repetido 2 vezes
+   Linhas: 979, 1222
+      - Gil | Cor: Preto | Tamanho: 39
+      - Roman | Cor: Preto | Tamanho: 38
+
+136. GTIN: 190400000944 - Repetido 2 vezes
+   Linhas: 980, 1223
+      - Gil | Cor: Preto | Tamanho: 40
+      - Roman | Cor: Preto | Tamanho: 39
+
+137. GTIN: 190400000945 - Repetido 2 vezes
+   Linhas: 981, 1224
+      - Gil | Cor: Preto | Tamanho: 41
+      - Roman | Cor: Preto | Tamanho: 40
+
+138. GTIN: 190400000946 - Repetido 2 vezes
+   Linhas: 982, 1225
+      - Gil | Cor: Preto | Tamanho: 42
+      - Roman | Cor: Preto | Tamanho: 41
+
+139. GTIN: 190400000947 - Repetido 2 vezes
+   Linhas: 983, 1226
+      - Gil | Cor: Preto | Tamanho: 43
+      - Roman | Cor: Preto | Tamanho: 42
+
+140. GTIN: 190400000948 - Repetido 2 vezes
+   Linhas: 984, 1227
+      - Gil | Cor: Preto | Tamanho: 44
+      - Roman | Cor: Preto | Tamanho: 43
+
+141. GTIN: 190400000949 - Repetido 2 vezes
+   Linhas: 985, 1228
+      - Gil | Cor: Preto | Tamanho: 45
+      - Roman | Cor: Preto | Tamanho: 44
+
+142. GTIN: 190400000950 - Repetido 2 vezes
+   Linhas: 986, 1229
+      - Gil | Cor: Preto | Tamanho: 46
+      - Roman | Cor: Preto | Tamanho: 45
+
+================================================================================
+Resumo: 142 GTINs duplicados
+Total de linhas que seriam rejeitadas: 142
+================================================================================

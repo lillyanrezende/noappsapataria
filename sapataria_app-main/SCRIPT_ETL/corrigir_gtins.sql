@@ -23,12 +23,7 @@ ORDER BY id;
 -- SEGUNDO: Executar a correção (DESCOMENTE PARA EXECUTAR)
 -- ============================================================
 /*
-UPDATE product_variant
-SET gtin = LEFT(gtin, LENGTH(gtin) - 3)
-WHERE id >= 109
-  AND gtin IS NOT NULL
-  AND LENGTH(gtin) > 3
-  AND RIGHT(gtin, 3) = '000';
+m
 */
 
 -- ============================================================

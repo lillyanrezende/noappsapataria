@@ -22,7 +22,7 @@ REQUIRED_COLUMNS = [
     "Nome",
     "Cor",
     "TAMANHO",
-    "CODIGO DE BARRAS",
+    "CODIGOS INTERNOS",
 ]
 
 COLMAP = {
@@ -34,7 +34,7 @@ COLMAP = {
     "Nome": "nome",
     "Cor": "cor",
     "TAMANHO": "tamanho",
-    "CODIGO DE BARRAS": "gtin",
+    "CODIGOS INTERNOS": "gtin",
 }
 
 
@@ -48,6 +48,7 @@ class Stats:
     rows_ok: int = 0
     rows_skipped_no_gtin: int = 0  # ignoradas porque GTIN vazio
     rows_rejected_error: int = 0   # rejeitadas por erro de validação/DB
+    rows_rejected_duplicate_gtin: int = 0  # rejeitadas por GTIN duplicado
 
     suppliers_created: int = 0
     brands_created: int = 0
@@ -165,6 +166,15 @@ class SupabaseClient:
         # merge duplicates faz UPDATE quando encontra conflito
         path = f"{table}?on_conflict={on_conflict}"
         return self._request("POST", path, json=rows, prefer="return=representation,resolution=merge-duplicates")
+
+    def get_all_gtins(self) -> set:
+        """Retorna um set com todos os GTINs existentes no BD"""
+        try:
+            rows = self.select("product_variant", select="gtin")
+            return {row["gtin"] for row in rows if row.get("gtin")}
+        except Exception as e:
+            self.logger.warning("Erro ao carregar GTINs existentes: %s", e)
+            return set()
 
 
 # -----------------------------
@@ -309,7 +319,7 @@ def find_or_create_model(
     return int(created[0]["id"]) if created else -1
 
 
-def upsert_variant(
+def insert_variant(
     sb: SupabaseClient,
     model_id: int,
     gtin: str,
@@ -318,7 +328,8 @@ def upsert_variant(
     ref_keyinvoice: Optional[int],
     stats: Stats,
 ) -> int:
-    rows = sb.upsert(
+    """Insere novo variant (não faz upsert, apenas INSERT)"""
+    rows = sb.insert(
         "product_variant",
         [{
             "model_id": model_id,
@@ -328,7 +339,6 @@ def upsert_variant(
             "ref_woocomerce": None,   # conforme pediste
             "ref_keyinvoice": ref_keyinvoice,
         }],
-        on_conflict="gtin",
     )
     stats.variants_upserted += 1
 
@@ -420,6 +430,13 @@ def main():
         fornecedor_id = 1 # Hardcoded para suppliers_id 1
 
         logger.info("Iniciando ETL (Supabase REST) | dry_run=%s | supplier=%s", dry_run, default_supplier)
+        
+        # Carrega GTINs existentes no BD para evitar duplicatas
+        existing_gtins = sb.get_all_gtins()
+        logger.info("GTINs existentes no BD: %d", len(existing_gtins))
+        
+        # Set para rastrear GTINs processados nesta execução
+        processed_gtins: set = set()
 
         for idx, row in df.iterrows():
             gtin = row["gtin"]
@@ -430,6 +447,22 @@ def main():
                 rej_writer.writerow([idx, "GTIN ausente (linha ignorada)", *[row.get(c) for c in df.columns]])
                 continue
 
+            # REGRA: rejeita se GTIN já existe no BD
+            if gtin in existing_gtins:
+                stats.rows_rejected_duplicate_gtin += 1
+                rej_writer.writerow([idx, f"GTIN já existe no BD: {gtin}", *[row.get(c) for c in df.columns]])
+                logger.warning("Linha %s rejeitada: GTIN %s já existe no BD", idx, gtin)
+                continue
+
+            # REGRA: rejeita se GTIN foi processado nesta mesma execução (duplicado na planilha)
+            if gtin in processed_gtins:
+                stats.rows_rejected_duplicate_gtin += 1
+                rej_writer.writerow([idx, f"GTIN duplicado na planilha: {gtin}", *[row.get(c) for c in df.columns]])
+                logger.warning("Linha %s rejeitada: GTIN %s duplicado na planilha", idx, gtin)
+                continue
+
+            # Marca GTIN como processado
+            processed_gtins.add(gtin)
             stats.rows_processed += 1
 
             try:
@@ -475,9 +508,9 @@ def main():
                     stats=stats,
                 )
 
-                # variant
+                # variant (INSERT, não UPSERT)
                 ref_keyinvoice_bigint = as_int_or_none(row["ref_keyinvoice"])  # product_variant.ref_keyinvoice é bigint
-                variant_id = upsert_variant(
+                variant_id = insert_variant(
                     sb=sb,
                     model_id=model_id,
                     gtin=gtin,
@@ -509,7 +542,8 @@ Modo: {"DRY-RUN (sem gravar, só logs)" if dry_run else "REAL (gravando no Supab
 Linhas:
 - Total no Excel:                 {stats.rows_total}
 - Ignoradas (sem GTIN):           {stats.rows_skipped_no_gtin}
-- Processadas (com GTIN):         {stats.rows_processed}
+- Rejeitadas (GTIN duplicado):    {stats.rows_rejected_duplicate_gtin}
+- Processadas (com GTIN novo):    {stats.rows_processed}
 - OK:                             {stats.rows_ok}
 - Rejeitadas por erro:            {stats.rows_rejected_error}
 
